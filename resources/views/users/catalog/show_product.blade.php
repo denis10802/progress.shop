@@ -87,50 +87,41 @@
                     <div class="tab-content">
                         <div id="product-description" class="tab-pane active show">
                             <div class="product-description">
-                                <div class="content">
-                                    @foreach($product->descriptions as $description )
-                                <h5 style="font-weight: 700">{{$description->name_descr}}</h5>
-                                    <p>{{$description->descr}}</p>
-                                </div>
+                                @foreach($product->descriptions as $description )
+                                        <h6 style="font-weight: 700">{{$description->name_descr}}</h6>
+                                            <p>{{$description->descr}}</p>
                                 @endforeach
-
                             </div>
-
-
                         </div>
-                        <div id="product-review" class="tab-pane ">
+                        <div id="product-review" class="tab-pane">
                             <div class="product-review">
 
-                                <div class="container faq-wrapper">
-                                    <div class="row">
-
-                                        <div class="col-12">
-                                            <!-- Cart Table -->
-                                            <div class="cart-table table-responsive mb-30">
-                                                <table class="table">
-                                                    <thead>
-                                                    <tr>
-                                                        <th class="pro-title">Технические характеристики</th>
-                                                        <th class="pro-price">Значение</th>
-                                                    </tr>
-                                                    </thead>
-                                                    @foreach($product->specifications as $specification )
-                                                    <tbody>
+                                <div class="review-form">
+                                    <div class="col-12">
+                                <!-- Cart Table -->
+                                <div class="cart-table table-responsive mb-30">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th class="pro-title">Технические характеристики</th>
+                                            <th class="pro-price">Значение</th>
+                                        </tr>
+                                        </thead>
+                                        @foreach($product->specifications as $specification )
+                                        <tbody>
 
 
-                                                    <tr>
-                                                        <td class="pro-title">{{$specification->name_param}}</td>
-                                                        <td class="pro-price"><span>{{$specification->param}}</span></td>
-                                                    </tr>
+                                        <tr>
+                                            <td class="pro-title">{{$specification->name_param}}</td>
+                                            <td class="pro-price"><span>{{$specification->param}}</span></td>
+                                        </tr>
 
 
-                                                    </tbody>
-                                                    @endforeach
-                                                </table>
-                                            </div>
-                                        </div>
-
-                                    </div>
+                                        </tbody>
+                                        @endforeach
+                                    </table>
+                                </div>
+                            </div>
                                 </div>
 
                             </div>
