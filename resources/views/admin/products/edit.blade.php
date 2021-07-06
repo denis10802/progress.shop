@@ -10,7 +10,7 @@
                 <div class="col-sm-6">
 
 
-                    <h1 class="m-0">Редактировать товар - {{$products['title']}}</h1>
+                    <h1 class="m-0">Редактировать товар - {{$products['id']}}</h1>
 
 
 
@@ -34,6 +34,7 @@
             <div class="card card-primary">
 
                 <div class="card-body">
+
                     <div class="form-group">
                         <label>Изображение</label>
                         <div class="col-6">
@@ -82,68 +83,13 @@
                             </select>
                         </div>
 
-{{--                        <div class="form-group">--}}
-{{--                            <label>Описание продукта</label>--}}
-{{--                            <textarea name="descr" class="form-control" rows="3" placeholder="Enter ..." style="margin-top: 0px; margin-bottom: 0px; height: 58px;">--}}
+                        <div class="form-group">
+                            <label>Описание продукта</label>
+                            <textarea name="descr" class="form-control" rows="10" placeholder="Enter ..." style="margin-top: 0px; margin-bottom: 0px; ">
+                                {{$products['descr']}}
+                            </textarea>
+                        </div>
 
-{{--                            </textarea>--}}
-{{--                        </div>--}}
-
-{{--                        <div class="form-group">--}}
-{{--                            <label>Назначение</label>--}}
-{{--                            <textarea name="purpose" class="form-control" rows="3" placeholder="Enter ..." style="margin-top: 0px; margin-bottom: 0px; height: 58px;">--}}
-{{--                               {{$products['purpose']}}--}}
-{{--                            </textarea>--}}
-{{--                        </div>--}}
-
-{{--                        <div class="form-group">--}}
-{{--                            <label>РЕКОМЕНДУЕМЫЕ ОСНОВАНИЯ</label>--}}
-{{--                            <textarea name="recommend" class="form-control" rows="3" placeholder="Enter ..." style="margin-top: 0px; margin-bottom: 0px; height: 58px;">--}}
-{{--                                {{$products['recommend']}}--}}
-{{--                            </textarea>--}}
-{{--                        </div>--}}
-
-{{--                        <div class="form-group">--}}
-{{--                            <label>УСЛОВИЯ ПРОВЕДЕНИЯ РАБОТ</label>--}}
-{{--                            <textarea name="conditions" class="form-control" rows="3" placeholder="Enter ..." style="margin-top: 0px; margin-bottom: 0px; height: 58px;">--}}
-{{--                                {{$products['conditions']}}--}}
-{{--                            </textarea>--}}
-{{--                        </div>--}}
-
-{{--                        <div class="form-group">--}}
-{{--                            <label>ПОДГОТОВКА ОСНОВАНИЯ</label>--}}
-{{--                            <textarea name="lead_up" class="form-control" rows="3" placeholder="Enter ..." style="margin-top: 0px; margin-bottom: 0px; height: 58px;">--}}
-{{--                                {{$products['lead_up']}}--}}
-{{--                            </textarea>--}}
-{{--                        </div>--}}
-
-{{--                        <div class="form-group">--}}
-{{--                            <label>ПРИГОТОВЛЕНИЕ РАСТВОРНОЙ СМЕСИ</label>--}}
-{{--                            <textarea name="preparation" class="form-control" rows="3" placeholder="Enter ..." style="margin-top: 0px; margin-bottom: 0px; height: 58px;">--}}
-{{--                                {{$products['preparation']}}--}}
-{{--                            </textarea>--}}
-{{--                        </div>--}}
-
-{{--                        <div class="form-group">--}}
-{{--                            <label>ПОРЯДОК РАБОТЫ</label>--}}
-{{--                            <textarea name="method_works" class="form-control" rows="3" placeholder="Enter ..." style="margin-top: 0px; margin-bottom: 0px; height: 58px;">--}}
-{{--                                {{$products['method_works']}}--}}
-{{--                            </textarea>--}}
-{{--                        </div>--}}
-
-{{--                        <div class="form-group">--}}
-{{--                            <label>УСЛОВИЯ ХРАНЕНИЯ</label>--}}
-{{--                            <textarea name="keeping" class="form-control" rows="3" placeholder="Enter ..." style="margin-top: 0px; margin-bottom: 0px; height: 58px;">--}}
-{{--                                {{$products['keeping']}}--}}
-{{--                            </textarea>--}}
-{{--                        </div>--}}
-
-{{--                        <div class="form-group">--}}
-{{--                            <label>ГАРАНТИЯ ИЗГОТОВИТЕЛЯ</label>--}}
-{{--                            <textarea name="guaranty" class="form-control" rows="3" placeholder="Enter ..." style="margin-top: 0px; margin-bottom: 0px; height: 58px;">--}}
-{{--                                 {{$products['guaranty']}}--}}
-{{--                            </textarea>--}}
-{{--                        </div>--}}
                     </div>
                     <!-- /.card-body -->
                     <div class="form-group">
@@ -161,10 +107,16 @@
                     </div>
                 </form>
 
+
+
             </div>
+
         </div><!-- /.container-fluid -->
+
     </section>
     <!-- /.content -->
+
+
 
 @endsection
 

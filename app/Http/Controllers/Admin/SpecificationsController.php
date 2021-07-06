@@ -3,84 +3,68 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Specifications;
+use App\Models\Product;
+use App\Models\Specification;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class SpecificationsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
+        $products = Product::all()->reverse();
+
+        return view('admin.specifications.index',[
+            'products'=>$products,
+        ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function create($id)
     {
-        //
+        $specification = Specification::where('product_id',$id)->get();
+        $product = Product::where('id',$id)->first();
+
+        return view('admin.specifications.edit',[
+            'specifications'=>$specification,
+            'product'=>$product
+        ]);
+
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function store(Request $request,Specification $specification)
     {
-        //
+        $specification->name_param = $request->name_param;
+        $specification->param = $request->param;
+        $specification->product_id = $request->product_id;
+
+        $specification->save();
+
+        return redirect()->back()->with('success','Ваш товар успешно обновлен');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Specifications  $specifications
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Specifications $specifications)
+    public function updateForm($id)
     {
-        //
+
+        $specification = Specification::where('id',$id)->first();
+        $product = Product::where('id',$id)->first();
+
+        return view('admin.specifications.update',[
+            'specification'=>$specification,
+            'product'=>$product
+        ]);
+
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Specifications  $specifications
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Specifications $specifications)
+    public function update(Request $request, $id)
     {
-        //
+        DB::table('specifications')->where('id',$id)->update([
+            'name_param' => $request->name_param,
+            'param' => $request->param,
+        ]);
+
+        return redirect()->back()->with('success','Ваш товар успешно обновлен');
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Specifications  $specifications
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Specifications $specifications)
-    {
-        //
-    }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Specifications  $specifications
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Specifications $specifications)
-    {
-        //
-    }
+
 }

@@ -21,6 +21,7 @@ class CreateProductsTable extends Migration
             $table->string('retail');
             $table->integer('cat_id')->unsigned();
             $table->text('descr')->nullable();
+            $table->string('slug');
             $table->timestamps();
         });
     }

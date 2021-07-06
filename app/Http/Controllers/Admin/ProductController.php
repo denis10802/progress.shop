@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class ProductController extends Controller
 {
@@ -53,7 +54,7 @@ class ProductController extends Controller
         $product->retail = $request->retail;
         $product->cat_id = $request->cat_id;
         $product->descr = $request->descr;
-
+        $product->slug = Str::of($request->title)->slug('-');
 
         $product->save();
 
@@ -103,8 +104,7 @@ class ProductController extends Controller
         $product->retail = $request->retail;
         $product->cat_id = $request->cat_id;
         $product->descr = $request->descr;
-
-
+        $product->slug = Str::of($request->title)->slug('-');
         $product->save();
 
         return redirect()->back()->with('success','Ваш товар успешно обновлен');

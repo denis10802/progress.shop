@@ -27,6 +27,9 @@
     <link rel="stylesheet" href="/admin/plugins/summernote/summernote-bs4.min.css">
     <link rel="stylesheet" href="/admin/dist/css/admin.css">
 
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -111,9 +114,16 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="pages/examples/project-detail.html" class="nav-link">
+                                <a href="{{ route('specification')}}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Project Detail</p>
+                                    <p>Спецификации</p>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="{{ route('description')}}" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Описания товаров</p>
                                 </a>
                             </li>
 
