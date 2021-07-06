@@ -76,7 +76,7 @@ Route::prefix('specification')->group(function (){
 
         Route::post('/',[App\Http\Controllers\Admin\DescriptionsController::class, 'store'])->name('addDescription');
 
-        Route::get('/update/{id}',[App\Http\Controllers\Admin\DescriptionsController::class, 'updateForm'])->name('updateForm');
+        Route::get('/update/{id}',[App\Http\Controllers\Admin\DescriptionsController::class, 'showUpdateForm'])->name('updateForm');
 
         Route::post('/update/{id}',[App\Http\Controllers\Admin\DescriptionsController::class, 'update'])->name('update');
 

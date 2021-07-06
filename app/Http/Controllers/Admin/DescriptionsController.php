@@ -42,7 +42,7 @@ class DescriptionsController extends Controller
         return redirect()->back()->with('success','Ваш товар успешно обновлен');
     }
 
-    public function updateForm($id)
+    public function showUpdateForm($id)
     {
 
         $description = Description::where('id',$id)->first();

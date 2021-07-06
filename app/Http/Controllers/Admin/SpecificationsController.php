@@ -42,7 +42,7 @@ class SpecificationsController extends Controller
         return redirect()->back()->with('success','Ваш товар успешно обновлен');
     }
 
-    public function updateForm($id)
+    public function showUpdateForm($id)
     {
 
         $specification = Specification::where('id',$id)->first();
