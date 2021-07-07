@@ -98,7 +98,7 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        $product->image = $request->file('image')->store('uploads/admin');
+        $product->image = $request->file('image')->store('/uploads/admin');
         $product->title = $request->title;
         $product->wholesale = $request->wholesale;
         $product->retail = $request->retail;
