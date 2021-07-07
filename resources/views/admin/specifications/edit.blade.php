@@ -114,7 +114,7 @@
 
                     <td class="project-actions text-right">
 
-                        <a  href="{{route('updateForm',$specification['id'])}}" class="btn btn-success btn-sm">
+                        <a  href="{{route('updateFormSpecification',$specification['id'])}}" class="btn btn-success btn-sm">
                             <i class="fas fa-pencil-alt">
                             </i>
                             Изменить

@@ -101,7 +101,7 @@
                                 </div>
                                 <div class="col-6 col-md-6">
                                     <div class="header-logo text-center">
-                                        <a href="index.html">
+                                        <a href="{{route('home')}}">
                                             <img src="/users/images/logo-mobile.png" class="img-fluid" alt="">
                                         </a>
                                     </div>
@@ -130,10 +130,10 @@
             </div>
             <div class="menu-content">
                 <ul class="menulist object-custom-menu">
-                    <li><a href="#"><span>Главная</span></a>
+                    <li><a href="{{route('home')}}"><span>Главная</span></a>
                     </li>
 
-                    <li><a href="#"><span>Каталог</span></a></li>
+                    <li><a href="{{route('catalog')}}"><span>Каталог</span></a></li>
 
                     <li><a href="#"><span>О Компании</span></a></li>
 

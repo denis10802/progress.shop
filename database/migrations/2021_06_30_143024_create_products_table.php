@@ -19,9 +19,14 @@ class CreateProductsTable extends Migration
             $table->string('image');
             $table->string('wholesale');
             $table->string('retail');
-            $table->integer('cat_id')->unsigned();
+            $table->bigInteger('cat_id')->unsigned();
+            $table->foreign('cat_id')
+                ->references('id')
+                ->on('categories')
+                ->onDelete('cascade');
             $table->text('descr')->nullable();
             $table->string('slug');
+
             $table->timestamps();
         });
     }

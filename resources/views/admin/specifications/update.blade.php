@@ -28,14 +28,10 @@
         <div class="container-fluid">
             <div class="card card-primary">
 
-                <form action="{{route('update',$specification['id'])}}" method="POST">
+                <form action="{{route('updateSpecification',$specification['id'])}}" method="POST">
 
 
                     @csrf
-
-
-
-
 
                         <div class="card-body p-0">
                             <table class="table table-striped projects">

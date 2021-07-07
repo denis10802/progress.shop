@@ -53,7 +53,7 @@
 
                             <td class="project-actions text-right">
 
-                                <a  href="{{route('create',$product->id)}}" class="btn btn-success btn-sm">
+                                <a  href="{{route('createSpecification',$product->id)}}" class="btn btn-success btn-sm">
                                     <i class="fas fa-pencil-alt">
                                     </i>
                                     Изменить

@@ -35,6 +35,7 @@ Route::get('/catalog/{cat}/{id}',[\App\Http\Controllers\Users\CatalogController:
 
 
 
+
 Auth::routes();
 
 Route::get('/admin_panel_88', [App\Http\Controllers\HomeController::class, 'index'])->name('admin_panel_88');
@@ -57,13 +58,13 @@ Route::prefix('specification')->group(function (){
 
     Route::get('/',[App\Http\Controllers\Admin\SpecificationsController::class, 'index'])->name('specification');
 
-    Route::get('/{id}',[App\Http\Controllers\Admin\SpecificationsController::class, 'create'])->name('create');
+    Route::get('/{id}',[App\Http\Controllers\Admin\SpecificationsController::class, 'create'])->name('createSpecification');
 
     Route::post('/',[App\Http\Controllers\Admin\SpecificationsController::class, 'store'])->name('addSpecification');
 
-    Route::get('/update/{id}',[App\Http\Controllers\Admin\SpecificationsController::class, 'showUpdateForm'])->name('updateForm');
+    Route::get('/update/{id}',[App\Http\Controllers\Admin\SpecificationsController::class, 'showUpdateForm'])->name('updateFormSpecification');
 
-    Route::post('/update/{id}',[App\Http\Controllers\Admin\SpecificationsController::class, 'update'])->name('update');
+    Route::post('/update/{id}',[App\Http\Controllers\Admin\SpecificationsController::class, 'update'])->name('updateSpecification');
 
 });
 
