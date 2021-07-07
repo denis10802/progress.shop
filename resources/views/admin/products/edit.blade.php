@@ -96,7 +96,7 @@
                         <div class="wrapper">
                             <div class="preview"></div>
                             <label class="file">
-                                <input type="file"  name="image" accept="image/jpeg,image/png" >
+                                <input type="file" name="image" accept="image/jpeg,image/png" >
                                 <span>Добавить изображение</span>
                             </label>
                         </div>
