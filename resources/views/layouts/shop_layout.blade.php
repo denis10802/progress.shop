@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico in the root directory -->
-    <link href="/users/images/favicon.ico" type="img/x-icon" rel="shortcut icon">
+    <link href="mages/favicon.ico" type="img/x-icon" rel="shortcut icon">
     <!-- All css files are included here. -->
     <link rel="stylesheet" href="/users/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="/users/css/vendor/iconfont.min.css">
@@ -37,7 +37,7 @@
                     <!--Logo start-->
                     <div class="col-xl-2 col-lg-2 col-12">
                         <div class="logo">
-                            <a href="{{route('home')}}"><img src="assets/images/logo-white.png" alt=""></a>
+                            <a href="{{route('home')}}"><img width="100%" src="/users/images/150px. х 66px..png" alt=""></a>
                         </div>
                     </div>
                     <!--Logo end-->
