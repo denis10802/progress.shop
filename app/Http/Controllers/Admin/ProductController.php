@@ -50,7 +50,7 @@ class ProductController extends Controller
 
 //        $product->image = ->;
         $image = $request->file('image');
-        dd( $image->store('uploads/admin'));
+        dd( $image->store('uploads'));
 
         $product->title = $request->title;
         $product->wholesale = $request->wholesale;
