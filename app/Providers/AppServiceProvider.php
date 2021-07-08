@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $categories = Category::orderBy('id')->get();
+        // $categories = Category::orderBy('id')->get();
         $products = Product::all();
 
         \Illuminate\Support\Facades\View::share([
