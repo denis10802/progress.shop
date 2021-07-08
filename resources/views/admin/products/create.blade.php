@@ -72,16 +72,16 @@
 
                     </div>
                     <!-- /.card-body -->
-                    <div class="form-group">
-                            <div class="wrapper">
-                                <div class="preview"></div>
-                                <label class="file">
-                                    <input type="file"  name="image" accept="image/jpeg,image/png" >
-                                    <span>Добавить изображение</span>
-                                </label>
-                            </div>
-                    </div>
+{{--                    <div class="form-group">--}}
+{{--                            <div class="wrapper">--}}
+{{--                                <div class="preview"></div>--}}
+{{--                                <label class="file">--}}
 
+{{--                                    <span>Добавить изображение</span>--}}
+{{--                                </label>--}}
+{{--                            </div>--}}
+{{--                    </div>--}}
+                    <input type="file" name="image" class="form-control"  >
                     <div class="card-footer">
                         <button type="submit" class="btn btn-primary start">Добавить</button>
                     </div>
