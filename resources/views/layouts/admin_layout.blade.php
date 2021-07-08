@@ -193,78 +193,78 @@
 <script src="/admin/dist/js/pages/dashboard.js"></script>
 <script src="/admin/admin.js"></script>
 
-{{--<script>--}}
-{{--    var preloaderFile ='<img class="preloader" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif">';--}}
-{{--    var removeFile = '<button onclick="delFileFromInput()" class="remove"></button>';--}}
+<script>
+    var preloaderFile ='<img class="preloader" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif">';
+    var removeFile = '<button onclick="delFileFromInput()" class="remove"></button>';
 
-{{--    function readURL(input) {--}}
-{{--        if (input.files && input.files[0]) {--}}
-{{--            var mass = ["image/jpeg", "image/jpg", "image/png", "image/gif", "application/pdf", "image/bmp"];--}}
-{{--            var nt = document.createElement('input');--}}
-{{--            nt.setAttribute("type", "file");--}}
-{{--            var index = $(input).closest('.wrapper').index();--}}
-{{--            nt.setAttribute("name", 'files['+index+'][]');--}}
-{{--            if($(input).data('name')){--}}
-{{--                nt.setAttribute("name", $(input).attr('name'));--}}
-{{--                nt.setAttribute("data-name", true);--}}
-{{--            }--}}
-{{--            nt.setAttribute("accept", "image/jpeg,image/png,image/gif");--}}
-{{--            var reader = new FileReader();--}}
-{{--            reader.onload = function (e) {--}}
-{{--                var div = document.createElement('div');--}}
-{{--                $(div).addClass('uploaded');--}}
-{{--                var img = document.createElement('img');--}}
-{{--                var typec = input.files[0].type;--}}
-{{--                var size = input.files[0].size;--}}
-{{--                $(img).attr('src', e.target.result);--}}
-{{--                function acceptung() {--}}
-{{--                    $(div).append(preloaderFile);--}}
-{{--                    $(div).append(img);--}}
-{{--                    $(div).append(removeFile);--}}
-{{--                    $(input).closest('.wrapper').find('.preview').append(div);--}}
-{{--                    $(input).closest('label').prepend(nt);--}}
-{{--                    $(div).append(input);--}}
-{{--                    setTimeout(function() {--}}
-{{--                        $(div).find('.preloader').remove();--}}
-{{--                    }, 500)--}}
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var mass = ["image/jpeg", "image/jpg", "image/png", "image/gif", "application/pdf", "image/bmp"];
+            var nt = document.createElement('input');
+            nt.setAttribute("type", "file");
+            var index = $(input).closest('.wrapper').index();
+            nt.setAttribute("name", 'files['+index+'][]');
+            if($(input).data('name')){
+                nt.setAttribute("name", $(input).attr('name'));
+                nt.setAttribute("data-name", true);
+            }
+            nt.setAttribute("accept", "image/jpeg,image/png,image/gif");
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                var div = document.createElement('div');
+                $(div).addClass('uploaded');
+                var img = document.createElement('img');
+                var typec = input.files[0].type;
+                var size = input.files[0].size;
+                $(img).attr('src', e.target.result);
+                function acceptung() {
+                    $(div).append(preloaderFile);
+                    $(div).append(img);
+                    $(div).append(removeFile);
+                    $(input).closest('.wrapper').find('.preview').append(div);
+                    $(input).closest('label').prepend(nt);
+                    $(div).append(input);
+                    setTimeout(function() {
+                        $(div).find('.preloader').remove();
+                    }, 500)
 
-{{--                }--}}
-{{--                function declinetung() {--}}
-{{--                    $(input).closest('label').prepend(nt);--}}
-{{--                    $(input).remove();--}}
-{{--                }--}}
-{{--                if(typec == "application/pdf"){--}}
-{{--                    if(size > 11000000){--}}
-{{--                        declinetung();--}}
-{{--                        alert('max size pdf 10Mb');--}}
-{{--                    }else{--}}
-{{--                        $(img).attr('src', 'images/pdff.jpg');--}}
-{{--                        acceptung();--}}
-{{--                    }--}}
-{{--                }else if($.inArray(typec, mass) == -1 ){--}}
-{{--                    declinetung();--}}
-{{--                }else if(size > 6100000){--}}
-{{--                    declinetung();--}}
-{{--                    alert('max size image 6Mb');--}}
-{{--                }else{--}}
-{{--                    acceptung();--}}
-{{--                }--}}
-{{--            }--}}
-{{--            reader.readAsDataURL(input.files[0]);--}}
+                }
+                function declinetung() {
+                    $(input).closest('label').prepend(nt);
+                    $(input).remove();
+                }
+                if(typec == "application/pdf"){
+                    if(size > 11000000){
+                        declinetung();
+                        alert('max size pdf 10Mb');
+                    }else{
+                        $(img).attr('src', 'images/pdff.jpg');
+                        acceptung();
+                    }
+                }else if($.inArray(typec, mass) == -1 ){
+                    declinetung();
+                }else if(size > 6100000){
+                    declinetung();
+                    alert('max size image 6Mb');
+                }else{
+                    acceptung();
+                }
+            }
+            reader.readAsDataURL(input.files[0]);
 
-{{--        }--}}
-{{--    }--}}
-{{--    function delFileFromInput() {--}}
-{{--        $(document).on('click', '.remove', function () {--}}
-{{--            $(this).closest('.uploaded').remove();--}}
-{{--        });--}}
-{{--    }--}}
+        }
+    }
+    function delFileFromInput() {
+        $(document).on('click', '.remove', function () {
+            $(this).closest('.uploaded').remove();
+        });
+    }
 
-{{--    $(document).on('change', '.file input',function(){--}}
-{{--        readURL(this);--}}
-{{--    });--}}
+    $(document).on('change', '.file input',function(){
+        readURL(this);
+    });
 
-{{--</script>--}}
+</script>
 
 
     </body>
