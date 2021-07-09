@@ -51,7 +51,7 @@
                                 <div class="single-product mb-30">
                                     <div class="product-image">
                                         <a href="{{route('showProduct', [$product->category->slug, $product->id])}}">
-                                            <img src="{{$product['image']}}" alt="{{$product['image']}}">
+                                            <img src="{{$product->image}}" alt="{{$product->image}}">
                                         </a>
                                     </div>
                                     <div class="product-content">
