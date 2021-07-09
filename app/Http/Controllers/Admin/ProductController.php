@@ -48,7 +48,7 @@ class ProductController extends Controller
     {
         $product = new Product();
 
-        $product->image = $request->file('image')->store('uploads');
+        $product->image = $request->file('image')->store('uploads','public');
 
 
         $product->title = $request->title;
