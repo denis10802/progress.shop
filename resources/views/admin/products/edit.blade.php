@@ -38,7 +38,7 @@
                     <div class="form-group">
                         <label>Изображение</label>
                         <div class="col-6">
-                            <img src="{{$products['image']}}" class="product-image text-center" alt="Product Image">
+                            <img src="{{Storage::url($products->image)}}" class="product-image text-center" alt="Product Image">
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
 
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form action="{{ route('product.update',$products['id'])}}" method="POST">
+                <form action="{{ route('product.update',$products['id'])}}" method="POST" enctype="multipart/form-data">
 
                     @method('PUT')
                     @csrf

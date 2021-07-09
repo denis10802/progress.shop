@@ -38,7 +38,7 @@
                     <div class="product-inner row">
                         <div class="col-lg-4 col-12 mb-sm-30 mb-xs-30">
                             <div>
-                                <div class="item"><img src="{{'/storage/'.$product->image}}" alt="{{$product->image}}"></div>
+                                <div class="item"><img src="{{Storage::url($product->image)}}" alt="{{$product->image}}"></div>
                             </div>
 
                         </div>

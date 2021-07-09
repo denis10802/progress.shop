@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class ProductController extends Controller
@@ -49,8 +50,6 @@ class ProductController extends Controller
         $product = new Product();
 
         $product->image = $request->file('image')->store('uploads','public');
-
-
         $product->title = $request->title;
         $product->wholesale = $request->wholesale;
         $product->retail = $request->retail;
@@ -100,7 +99,9 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        $product->image = $request->file('image')->store('uploads/admin');
+
+        Storage::disk('public')->delete($product->image);
+        $product->image = $request->file('image')->store('uploads','public');
         $product->title = $request->title;
         $product->wholesale = $request->wholesale;
         $product->retail = $request->retail;
@@ -120,6 +121,7 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
+        Storage::disk('public')->delete($product->image);
         $product->delete();
         return redirect()->back()->with('success','Товар удален');
     }
