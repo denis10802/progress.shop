@@ -38,7 +38,7 @@
                     <!--Logo start-->
                     <div class="col-xl-2 col-lg-2 col-12">
                         <div class="logo">
-                            <a href="{{route('home')}}"><img  src="/users/images/150px. х 66px..png" alt=""></a>
+                            <a href="{{route('home')}}"><img  src="/users/images/LOGO.png" alt=""></a>
                         </div>
                     </div>
                     <!--Logo end-->

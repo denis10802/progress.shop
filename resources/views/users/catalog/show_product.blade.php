@@ -38,7 +38,7 @@
                     <div class="product-inner row">
                         <div class="col-lg-4 col-12 mb-sm-30 mb-xs-30">
                             <div>
-                                <div class="item"><img src="/users/images/product/product-big/product1.jpg" alt=""></div>
+                                <div class="item"><img src="{{$product->image}}" alt=""></div>
                             </div>
 
                         </div>

@@ -37,7 +37,7 @@
                     <!--Logo start-->
                     <div class="col-xl-2 col-lg-2 col-12">
                         <div class="logo">
-                            <a href="{{route('home')}}"><img width="100%" src="/users/images/150px. х 66px..png" alt=""></a>
+                            <a href="{{route('home')}}"><img width="100%" src="/users/images/LOGO.png" alt=""></a>
                         </div>
                     </div>
                     <!--Logo end-->
@@ -102,7 +102,7 @@
                                 <div class="col-6 col-md-6">
                                     <div class="header-logo text-center">
                                         <a href="{{route('home')}}">
-                                            <img src="/users/images/logo-mobile.png" class="img-fluid" alt="">
+                                            <img src="/users/images/LOGO.png" class="img-fluid" alt="">
                                         </a>
                                     </div>
                                 </div>
@@ -123,7 +123,7 @@
             <div class="mobileheader">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="assets/images/logo-mobile.png" alt="Multipurpose">
+                        <img src="/users/images/LOGO.png" alt="Multipurpose">
                     </a>
                 </div>
                 <a class="mobile-close" href="index.html#"></a>
