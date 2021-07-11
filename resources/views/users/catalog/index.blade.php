@@ -71,6 +71,7 @@
                     <div class="row">
                         <div class="col-12">
                             <ul class="page-pagination">
+                                {{$products->links()}}
                                 <li><a href="shop.html#"><i class="fa fa-angle-left"></i></a></li>
                                 <li class="active"><a href="shop.html#">1</a></li>
                                 <li><a href="shop.html#">2</a></li>

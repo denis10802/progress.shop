@@ -11,7 +11,8 @@ class CatalogController extends Controller
 {
    public  function index()
    {
-       $products = Product::all();
+       $products = Product::paginate(2);
+
 
        return view('users.catalog.index',[
            'products'=>$products,
@@ -24,8 +25,10 @@ class CatalogController extends Controller
        $cat = Category::where('slug',$cat_slug)->first();
 
 
+
        return view('users.catalog.show_category',[
-           'cat'=>$cat
+           'cat'=>$cat,
+
        ]);
    }
 
