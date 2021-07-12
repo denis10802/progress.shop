@@ -30,6 +30,7 @@ Route::get('/catalog/{cat}/{id}',[\App\Http\Controllers\Users\CatalogController:
 Route::get('/contact',[\App\Http\Controllers\Users\HomeController::class,'showContacts'])->name('showContacts');
 
 Route::get('/about',[\App\Http\Controllers\Users\HomeController::class,'showAbout'])->name('showAbout');
+Route::get('/shipping-and-payment',[\App\Http\Controllers\Users\HomeController::class,'showDelivery'])->name('showDelivery');
 
 
 

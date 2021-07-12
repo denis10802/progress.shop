@@ -25,5 +25,11 @@ class HomeController extends Controller
         return view('users.about.index');
     }
 
+    public function showDelivery()
+    {
+        return view('users.delivery.index');
+
+    }
+
 
 }
