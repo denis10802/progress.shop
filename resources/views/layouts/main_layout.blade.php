@@ -47,11 +47,11 @@
                     <div class="col-xl-7 col-lg-7 col-12">
                         <nav class="main-menu">
                             <ul>
-                                <li><a href="{{route('home')}}">Главная</a></li>
-                                <li><a href="{{route('catalog')}}">Каталог</a></li>
-                                <li><a href="#">О компании</a></li>
-                                <li><a href="#">Доставка и оплата</a></li>
-                                <li><a href="#">Контакты</a></li>
+                                <li><a href="{{route('home')}}">ГЛАВНАЯ</a></li>
+                                <li><a href="{{route('catalog')}}">КАТАЛОГ</a></li>
+                                <li><a href="{{route('showAbout')}}">О КОМПАНИИ</a></li>
+                                <li><a href="#">ДОСТАВКА И ОПЛАТА</a></li>
+                                <li><a href="{{route('showContacts')}}">КОНТАКТЫ</a></li>
 
                             </ul>
                         </nav>
@@ -65,7 +65,7 @@
                                 <div class="jp-author item">
                                     <a href="#">
                                         <i class="lnr lnr-phone-handset"></i>
-                                        <span>Заказать звонок</span>
+                                        <span>ЗАКАЗАТЬ ЗВОНОК</span>
                                     </a>
                                 </div>
 
@@ -130,16 +130,16 @@
             </div>
             <div class="menu-content">
                 <ul class="menulist object-custom-menu">
-                    <li><a href="{{route('home')}}"><span>Главная</span></a>
+                    <li><a href="{{route('home')}}"><span>ГЛАВНАЯ</span></a>
                     </li>
 
-                    <li><a href="{{route('catalog')}}"><span>Каталог</span></a></li>
+                    <li><a href="{{route('catalog')}}"><span>КАТАЛОГ</span></a></li>
 
-                    <li><a href="#"><span>О Компании</span></a></li>
+                    <li><a href=""><span>О КОМПАНИИ</span></a></li>
 
-                    <li><a href="#"><span>Доставка И Оплата</span></a></li>
+                    <li><a href="#"><span>ДОСТАВКА И ОПЛАТА</span></a></li>
 
-                    <li><a href="#"><span>Контакты</span></a></li>
+                    <li><a href="{{route('showContacts')}}"><span>КОНТАКТЫ</span></a></li>
                 </ul>
             </div>
         </div>

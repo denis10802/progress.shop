@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico in the root directory -->
-    <link href="mages/favicon.ico" type="img/x-icon" rel="shortcut icon">
+{{--    <link href="mages/favicon.ico" type="img/x-icon" rel="shortcut icon">--}}
     <!-- All css files are included here. -->
     <link rel="stylesheet" href="/users/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="/users/css/vendor/iconfont.min.css">
@@ -46,12 +46,11 @@
                     <div class="col-xl-7 col-lg-7 col-12">
                         <nav class="main-menu">
                             <ul>
-                                <li><a href="{{route('home')}}">Главная</a></li>
-                                <li><a href="{{route('catalog')}}">Каталог</a></li>
-                                <li><a href="#">О компании</a></li>
-                                <li><a href="#">Вопрос-Ответ</a></li>
-                                <li><a href="#">Доставка и оплата</a></li>
-                                <li><a href="#">Контакты</a></li>
+                                <li><a href="{{route('home')}}">ГЛАВНАЯ</a></li>
+                                <li><a href="{{route('catalog')}}">КАТАЛОГ</a></li>
+                                <li><a href="{{route('showAbout')}}">О КОМПАНИИ</a></li>
+                                <li><a href="#">ДОСТАВКА И ОПЛАТА</a></li>
+                                <li><a href="{{route('showContacts')}}">КОНТАКТЫ</a></li>
 
                             </ul>
                         </nav>
@@ -65,7 +64,7 @@
                                 <div class="jp-author item">
                                     <a href="#">
                                         <i class="lnr lnr-phone-handset"></i>
-                                        <span>Заказать звонок</span>
+                                        <span>ЗАКАЗАТЬ ЗВОНОК</span>
                                     </a>
                                 </div>
 
@@ -130,18 +129,16 @@
             </div>
             <div class="menu-content">
                 <ul class="menulist object-custom-menu">
-                    <li><a href="{{route('home')}}"><span>Главная</span></a>
+                    <li><a href="{{route('home')}}"><span>ГЛАВНАЯ</span></a>
                     </li>
 
-                    <li><a href="{{route('catalog')}}"><span>Каталог</span></a></li>
+                    <li><a href="{{route('catalog')}}"><span>КАТАЛОГ</span></a></li>
 
-                    <li><a href="#"><span>О Компании</span></a></li>
+                    <li><a href="#"><span>О КОМПАНИИ</span></a></li>
 
-                    <li><a href="#"><span>Вопрос-Ответ</span></a></li>
+                    <li><a href="#"><span>ДОСТАВКА И ОПЛАТА</span></a></li>
 
-                    <li><a href="#"><span>Доставка И Оплата</span></a></li>
-
-                    <li><a href="#"><span>Контакты</span></a></li>
+                    <li><a href="#"><span>КОНТАКТЫ</span></a></li>
                 </ul>
             </div>
         </div>
@@ -307,7 +304,8 @@
 <!-- Placed js at the end of the document so the pages load faster -->
 
 <!-- All jquery file included here -->
-<script src="/users/js/vendor/jquery-3.5.0.min.js"></script>
+{{--<script src="/users/js/vendor/jquery-3.5.0.min.js"></script>--}}
+<script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
 <script src="/users/js/vendor/jquery-migrate-3.1.0.min.js"></script>
 <script src="/users/js/vendor/bootstrap.bundle.min.js"></script>
 <!-- <script src="assets/js/plugins/plugins.js"></script> -->

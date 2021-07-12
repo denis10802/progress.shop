@@ -14,4 +14,16 @@ class HomeController extends Controller
     {
         return view('users.home.index');
     }
+
+    public function  showContacts()
+    {
+        return view('users.contact.index');
+    }
+
+    public function  showAbout()
+    {
+        return view('users.about.index');
+    }
+
+
 }

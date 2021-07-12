@@ -5,10 +5,10 @@
     Version: 1.0
 
 -----------------------------------------------------------------------------------
-    
+
     CSS INDEX
     ===================
-	
+
     01. Theme default CSS
     02. Color Variation CSS
     03. Mixin CSS
@@ -45,7 +45,7 @@
     34. CTA CSS
     35. Comment CSS
     36. Sidebar CSS
-    37. Contact CSS
+    37. contact CSS
     38. Footer CSS
     39. 404 CSS
     40. Modal CSS
@@ -160,7 +160,7 @@ ul {
 img {
   max-width: 100%; }
 
-/*-- 
+/*--
     - Common Classes
 -----------------------------------------*/
 .p-40 {
@@ -440,7 +440,7 @@ img {
   #scrollUp:hover {
     background: #1dae0e; }
 
-/*-- 
+/*--
     - Input Placeholder
 -----------------------------------------*/
 input:-moz-placeholder, textarea:-moz-placeholder {
@@ -472,7 +472,7 @@ body.template-color-3 .text-color {
 body.template-color-4 .text-color {
   color: #ff5d3c; }
 
-/*-- 
+/*--
     - Tab Content & Pane Fix
 ------------------------------------------*/
 .tab-content {
@@ -490,10 +490,10 @@ body.template-color-4 .text-color {
       opacity: 1;
       overflow: visible; }
 
-/*-- 
+/*--
     - Main Wrapper
 ------------------------------------------*/
-/*-- 
+/*--
     - Section Title
 ------------------------------------------*/
 .section-title-wrap {
@@ -631,7 +631,7 @@ body.template-color-4 .text-color {
     line-height: 21px;
     font-weight: 500; }
 
-/*-- 
+/*--
     - Button
 ------------------------------------------*/
 a.ht-btn,
@@ -776,7 +776,7 @@ button.ht-btn {
   button.ht-btn:hover {
     opacity: 0.9; }
 
-/*-- 
+/*--
     - Page Banner Section
 ------------------------------------------*/
 /*-- Page Banner --*/
@@ -875,7 +875,7 @@ button.ht-btn {
 /* -----------------
     Instafeed css
 ---------------------*/
-/*-- 
+/*--
     - Page Pagination
 ------------------------------------------*/
 .page-pagination {
@@ -1133,7 +1133,7 @@ blockquote.blockquote {
     display: block;
     line-height: 18px; }
 
-/*==================== 
+/*====================
     Map CSS
 =======================*/
 #map {
@@ -1148,7 +1148,7 @@ blockquote.blockquote {
 -----------------------------------------*/
 body.template-color-1 {
   /*-- Common CSS --*/
-  /*-- 
+  /*--
             - Button
         ------------------------------------------*/
   /*-- Main Menu --*/
@@ -1278,7 +1278,7 @@ body.template-color-1 {
 
 body.template-color-2 {
   /*-- Common CSS --*/
-  /*-- 
+  /*--
             - Button
         ------------------------------------------*/
   /*-- Main Menu --*/
@@ -1408,7 +1408,7 @@ body.template-color-2 {
 
 body.template-color-3 {
   /*-- Common CSS --*/
-  /*-- 
+  /*--
             - Button
         ------------------------------------------*/
   /*-- Main Menu --*/
@@ -1538,7 +1538,7 @@ body.template-color-3 {
 
 body.template-color-4 {
   /*-- Common CSS --*/
-  /*-- 
+  /*--
             - Button
         ------------------------------------------*/
   /*-- Main Menu --*/
@@ -2270,7 +2270,7 @@ body.template-color-4 {
           transform: none; }
 
 /* =======================
-    Header menu 
+    Header menu
 ==========================*/
 .object-custom-menu {
   padding: 0;
@@ -8714,7 +8714,7 @@ body.template-color-4 {
   padding: 30px 30px 35px;
   background-color: #f2f5fc; }
 
-/*-- Sidebar Contact Button --*/
+/*-- Sidebar contact Button --*/
 .sidebar-contact .candidate-widget-wrap {
   padding: 30px 25px;
   background-color: #f2f5fc; }
@@ -9056,7 +9056,7 @@ body.template-color-4 {
           margin-right: 0; }
 
 /*----------------------------------------*/
-/*  37. Contact CSS
+/*  37. contact CSS
 /*----------------------------------------*/
 .contact-map {
   width: 100%;

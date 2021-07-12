@@ -38,7 +38,7 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="archive-shop-inner text-center text-sm-left">
-                                <p>Showing {{$products->count()}}</p>
+                                <p>Всего {{$products->count()}}</p>
                             </div>
                         </div>
 

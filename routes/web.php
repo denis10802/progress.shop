@@ -27,6 +27,10 @@ Route::get('/catalog/{cat}',[\App\Http\Controllers\Users\CatalogController::clas
 
 Route::get('/catalog/{cat}/{id}',[\App\Http\Controllers\Users\CatalogController::class,'showProduct'])->name('showProduct');
 
+Route::get('/contact',[\App\Http\Controllers\Users\HomeController::class,'showContacts'])->name('showContacts');
+
+Route::get('/about',[\App\Http\Controllers\Users\HomeController::class,'showAbout'])->name('showAbout');
+
 
 
 
@@ -82,6 +86,8 @@ Route::prefix('specification')->group(function (){
         Route::post('/update/{id}',[App\Http\Controllers\Admin\DescriptionsController::class, 'update'])->name('update');
 
     });
+
+
 
 
 

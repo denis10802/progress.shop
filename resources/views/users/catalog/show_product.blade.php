@@ -1,6 +1,6 @@
 @extends('layouts.main_layout')
 
-@section('title', )
+@section('title', $product->title)
 
 @section('header-class') black-logo-version sticky-white @endsection
 
@@ -56,14 +56,14 @@
                                 </div>
 
                                 <div class="actions">
-                                    <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                                    <a href="#" class="add-to-cart">ЗАКАЗАТЬ ЗВОНОК</a>
                                 </div>
 
                             </div>
                         </div>
                         <div class="col-lg-3 col-12">
                             <div class="common-sidebar-widget sidebar-five">
-                                <h2 class="sidebar-title">Product categories</h2>
+                                <h2 class="sidebar-title">Категории</h2>
                                 <div class="sidebar-list">
                                     <ul>
                                         @foreach($categories as $category)
