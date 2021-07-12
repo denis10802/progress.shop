@@ -30,7 +30,7 @@
 @section('content')
 
 
-    <div class="col-lg-9 col-12 order-lg-2 order-1">
+    <div class="col-lg-9 col-12 order-lg-2 order-2">
         <div class="row">
 
             <div class="col-lg-12">

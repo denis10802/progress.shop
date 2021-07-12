@@ -155,7 +155,7 @@
         <div class="container faq-wrapper">
             <div class="row">
 
-                <div class="col-lg-3 col-12 order-lg-1 order-2">
+                <div class="col-lg-3 col-12 order-lg-1 order-1">
                     <div class="sidebar-wrapper-shop mt-sm-40 mt-xs-30">
                         <div class="common-sidebar-widget sidebar-four">
                             <h2 class="sidebar-title">Категории</h2>
