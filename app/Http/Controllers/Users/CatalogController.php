@@ -11,7 +11,7 @@ class CatalogController extends Controller
 {
    public  function index()
    {
-       $products = Product::paginate(2);
+       $products = Product::paginate(10);
 
 
        return view('users.catalog.index',[

@@ -68,18 +68,8 @@
                         <!-- End Single Product -->
 
                     </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <ul class="page-pagination">
-                                {{$products->links()}}
-                                <li><a href="shop.html#"><i class="fa fa-angle-left"></i></a></li>
-                                <li class="active"><a href="shop.html#">1</a></li>
-                                <li><a href="shop.html#">2</a></li>
-                                <li><a href="shop.html#">3</a></li>
-                                <li><a href="shop.html#"><i class="fa fa-angle-right"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    {{$products->links('vendor.pagination.bootstrap-4')}}
+
                 </div>
             </div>
 
