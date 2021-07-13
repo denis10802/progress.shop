@@ -4,7 +4,7 @@
 Commons Variables
 -----------------------------------*/
 var windows = $(window);
-    
+
 /*--
     Menu Sticky
 -----------------------------------*/
@@ -20,11 +20,11 @@ windows.on('scroll', function() {
 });
 
 /*--
-    Header Search 
+    Header Search
 -----------------------------------*/
 var $headerSearchToggle = $('.header-search-toggle');
 var $headerSearchForm = $('.header-search-form');
-    
+
 $headerSearchToggle.on('click', function() {
     var $this = $(this);
     if(!$this.hasClass('open')) {
@@ -78,7 +78,7 @@ $('.object-custom-menu > li.has-mega-menu > a').on('click', function (e) {
 /*--
     Job Alert Box Toggle
 -----------------------------------*/
-    
+
 
 $('.job-alert-form .btn-open-form').on('click', function (e) {
     e.preventDefault();
@@ -138,7 +138,7 @@ $('.toggle-btn-js').on('click', function (e) {
         $($sibiling).removeClass('open')
     }
     $($target).slideToggle(500)
-})    
+})
 
 /*--
     - Background Image
@@ -149,7 +149,7 @@ $backgroundImage.each(function() {
         $bgImage = $this.data('bg');
     $this.css('background-image', 'url('+$bgImage+')');
 });
-    
+
 
 /*--
     Sliders
@@ -590,9 +590,9 @@ $('.blog-gallery-slider').slick({
     ]
 });
 
-/*----------------------------------- 
+/*-----------------------------------
     Single Product Slider
---------------------------------------*/  
+--------------------------------------*/
 // Product Image Slider
 $('.product-image-slider').slick({
     infinite: true,
@@ -677,8 +677,8 @@ $('.product-slider-3').slick({
 ----------------------------------*/
 $('.single-employer-item, .single-testimonial-two').matchHeight();
 
-/*----------------------------------- 
-    Price slider Active 
+/*-----------------------------------
+    Price slider Active
 ----------------------------------*/
 $('#salary-range').slider({
     range: true,
@@ -690,11 +690,11 @@ $('#salary-range').slider({
     }
 });
 $('#salary-amount').val('$' + $('#salary-range').slider( 'values', 0 ) +
-    ' - $' + $('#salary-range').slider('values', 1 ) ); 
+    ' - $' + $('#salary-range').slider('values', 1 ) );
 
 
-/*----------------------------------- 
-    Location slider range Active 
+/*-----------------------------------
+    Location slider range Active
 ----------------------------------*/
 $( "#slider-range-min" ).slider({
     range: "min",
@@ -738,7 +738,7 @@ $rangeSlider.each(function(){
 $('.counter').counterUp({
     delay: 70,
     time: 5000
-}); 
+});
 
 /*------------------------
 	Sticky Sidebar Active
@@ -748,7 +748,7 @@ $('#sticky-sidebar').theiaStickySidebar({
     additionalMarginTop: 80
   })
 
-/*----- 
+/*-----
 	Quantity
 --------------------------------*/
 $('.pro-qty').prepend('<button class="dec qtybtn">-</button>');
@@ -770,7 +770,7 @@ $('.qtybtn').on('click', function() {
 });
 /* -------------------------
     Venobox Active
-* --------------------------*/  
+* --------------------------*/
 $('.venobox').venobox({
     border: '10px',
     titleattr: 'data-title',
@@ -778,16 +778,16 @@ $('.venobox').venobox({
     infinigall: true
 });
 /* --------------------------------------------------------
-    FAQ Accordion 
-* -------------------------------------------------------*/ 
+    FAQ Accordion
+* -------------------------------------------------------*/
 $('.card-header a').on('click', function() {
     $('.card').removeClass('actives');
     $(this).parents('.card').addClass('actives');
-  }); 
+  });
 
-/*----- 
+/*-----
 	Shipping Form Toggle
---------------------------------*/ 
+--------------------------------*/
 $('[data-shipping]').on('click', function(){
     if( $('[data-shipping]:checked').length > 0 ) {
         $('#shipping-form').slideDown();
@@ -795,20 +795,20 @@ $('[data-shipping]').on('click', function(){
         $('#shipping-form').slideUp();
     }
 })
-    
-/*----- 
+
+/*-----
 	Payment Method Select
 --------------------------------*/
 $('[name="payment-method"]').on('click', function(){
-    
+
     var $value = $(this).attr('value');
 
     $('.single-method p').slideUp();
     $('[data-method="'+$value+'"]').slideDown();
-    
+
 })
 
-/*------------------------------ 
+/*------------------------------
     Nice Select Active
 ---------------------------------*/
 $('select').niceSelect();
@@ -822,28 +822,28 @@ $.scrollUp({
     scrollSpeed: 900,
     animation: 'fade'
 });
-    
+
 /*--
 	MailChimp
 -----------------------------------*/
-$('#mc-form').ajaxChimp({
-	language: 'en',
-	callback: mailChimpResponse,
-	// ADD YOUR MAILCHIMP URL BELOW HERE!
-	url: 'http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef'
+// $('#mc-form').ajaxChimp({
+// 	language: 'en',
+// 	callback: mailChimpResponse,
+// 	// ADD YOUR MAILCHIMP URL BELOW HERE!
+// 	url: 'http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef'
+//
+// });
+// function mailChimpResponse(resp) {
+//
+// 	if (resp.result === 'success') {
+// 		$('.mailchimp-success').html('' + resp.msg).fadeIn(900);
+// 		$('.mailchimp-error').fadeOut(400);
+//
+// 	} else if(resp.result === 'error') {
+// 		$('.mailchimp-error').html('' + resp.msg).fadeIn(900);
+// 	}
+// }
 
-});
-function mailChimpResponse(resp) {
-	
-	if (resp.result === 'success') {
-		$('.mailchimp-success').html('' + resp.msg).fadeIn(900);
-		$('.mailchimp-error').fadeOut(400);
-		
-	} else if(resp.result === 'error') {
-		$('.mailchimp-error').html('' + resp.msg).fadeIn(900);
-	}  
-}
-    
 
-  
-})(jQuery);	
+
+})(jQuery);

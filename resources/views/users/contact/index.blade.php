@@ -75,7 +75,8 @@
                     <div class="contact-info mb-30">
                         <h2 class="title">Contact form</h2>
                         <div class="contact-form">
-                            <form action="https://demo.hasthemes.com/jetapo-preview/jetapo/assets/php/contact-mail.php" id="contact-form" method="post">
+                            <form action="{{route('sendForm')}}"  method="post">
+                                @csrf
                                 <p>Please send us a message by filling out the form below and we will get back with you</p>
                                 <div class="row">
                                     <div class="col-12">
@@ -88,11 +89,7 @@
                                             <input type="email" placeholder="Email *" name="email">
                                         </div>
                                     </div>
-                                    <div class="col-12">
-                                        <div class="single-input">
-                                            <textarea name="message" placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
+
                                     <div class="col-12 mb-40">
                                         <button class="ht-btn">Send</button>
                                         <p class="form-messege"></p>

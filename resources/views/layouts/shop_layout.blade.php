@@ -102,7 +102,7 @@
                                 <div class="col-6 col-md-6">
                                     <div class="header-logo text-center">
                                         <a href="{{route('home')}}">
-                                            <img src="/users/images/LOGO.png" class="img-fluid" alt="">
+                                            <img src="/users/images/mobile-logo.png" class="img-fluid" alt="">
                                         </a>
                                     </div>
                                 </div>
@@ -123,7 +123,7 @@
             <div class="mobileheader">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="/users/images/LOGO.png" alt="Multipurpose">
+                        <img src="/users/images/mobile-logo.png" alt="Multipurpose">
                     </a>
                 </div>
                 <a class="mobile-close" href="index.html#"></a>

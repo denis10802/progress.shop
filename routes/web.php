@@ -3,7 +3,7 @@
 
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
-use App\Http\Controllers\Admin\SpecificationController;
+use App\Http\Controllers\Admin\SpecificationsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,6 +32,8 @@ Route::get('/contact',[\App\Http\Controllers\Users\HomeController::class,'showCo
 Route::get('/about',[\App\Http\Controllers\Users\HomeController::class,'showAbout'])->name('showAbout');
 
 Route::get('/shipping-and-payment',[\App\Http\Controllers\Users\HomeController::class,'showDelivery'])->name('showDelivery');
+
+Route::post('/send-mail',[\App\Http\Controllers\MailSetting::class,'sendForm' ])->name('sendForm');
 
 
 

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/users/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="/users/css/vendor/iconfont.min.css">
     <link rel="stylesheet" href="/users/css/vendor/helper.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 {{--     <link rel="stylesheet" href="/users/css/plugins/plugins.css">--}}
 {{--    <link rel="stylesheet" href="/users/css/style.css">--}}
 
@@ -103,7 +103,7 @@
                                 <div class="col-6 col-md-6">
                                     <div class="header-logo text-center">
                                         <a href="{{route('home')}}">
-                                            <img src="/users/images/logo-mobile.png" class="img-fluid" alt="">
+                                            <img src="/users/images/mobile-logo.png" class="img-fluid" alt="">
                                         </a>
                                     </div>
                                 </div>
@@ -124,10 +124,10 @@
             <div class="mobileheader">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="assets/images/logo-mobile.png" alt="Multipurpose">
+                        <img src="/users/images/mobile-logo.png" alt="Multipurpose">
                     </a>
                 </div>
-                <a class="mobile-close" href="index.html#"></a>
+                <a class="mobile-close" href="#"></a>
             </div>
             <div class="menu-content">
                 <ul class="menulist object-custom-menu">
