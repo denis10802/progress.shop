@@ -11,8 +11,8 @@ class MailController extends Mailable
 {
     use Queueable, SerializesModels;
 
-    protected $name;
-    protected $email;
+    public $name;
+    public $email;
 
 
 
@@ -39,5 +39,6 @@ class MailController extends Mailable
             'name'=>$this->name,
             'email'=>$this->email
         ])->subject('новое письмо');
+
     }
 }

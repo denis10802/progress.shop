@@ -13,9 +13,10 @@ class MailSetting extends Controller
 
         $name = $request->name;
         $email=$request->email;
+        $recipient = 'denis03.88@mail.ru';
 
 
-        Mail::to('denis03.88@mail.ru')->send(new MailController($name, $email));
+        Mail::mailer('smtp')->to($recipient)->send(new MailController($name, $email));
 
     }
 }
