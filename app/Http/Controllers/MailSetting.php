@@ -18,5 +18,7 @@ class MailSetting extends Controller
 
         Mail::to($recipient)->send(new MailController($name, $email));
 
+        return redirect()->back()->with('success','Ваше сообщение успешно отправлено');
+
     }
 }

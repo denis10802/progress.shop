@@ -85,7 +85,7 @@ return [
 
     'from' => [
         'address' => 'zakaz@progressshop.ru',
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'name' => 'ProgressShop',
     ],
 
     /*
