@@ -36,9 +36,9 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'smtp.yandex.ru'),
-            'port' => env('MAIL_PORT', 465),
-            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+            'host' => 'smtp.yandex.ru',
+            'port' => 465,
+            'encryption' => 'tls',
             'username' => 'zakaz@progressshop@progressshop.ru',
             'password' => 'barin1989',
             'timeout' => null,
