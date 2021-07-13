@@ -16,7 +16,7 @@ class MailSetting extends Controller
         $recipient = 'zakaz@progressshop.ru';
 
 
-        Mail::mailer('smtp')->to($recipient)->send(new MailController($name, $email));
+        Mail::to($recipient)->send(new MailController($name, $email));
 
     }
 }
