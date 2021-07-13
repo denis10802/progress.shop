@@ -36,11 +36,11 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'smtp.mail.ru'),
-            'port' => env('MAIL_PORT', 587),
+            'host' => env('MAIL_HOST', 'smtp.yandex.ru'),
+            'port' => env('MAIL_PORT', 465),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME','progressshop@progressshop.ru'),
-            'password' => env('MAIL_PASSWORD','Lgw!H,_gWF3?4xq'),
+            'username' => 'zakaz@progressshop@progressshop.ru',
+            'password' => 'barin1989',
             'timeout' => null,
             'auth_mode' => null,
         ],
@@ -84,8 +84,8 @@ return [
     */
 
     'from' => [
-        'address' => 'zakaz@progressshop.ru',
-        'name' => env('MAIL_FROM_NAME', 'zakaz@progressshop.ru'),
+        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+        'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
     /*
