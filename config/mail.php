@@ -38,7 +38,7 @@ return [
             'transport' => 'smtp',
             'host' => 'smtp.yandex.ru',
             'port' => 465,
-            'encryption' => 'tls',
+            'encryption' => 'ssl',
             'username' => 'zakaz@progressshop@progressshop.ru',
             'password' => 'barin1989',
             'timeout' => null,
