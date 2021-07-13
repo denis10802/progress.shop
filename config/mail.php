@@ -39,7 +39,7 @@ return [
             'host' => env('MAIL_HOST', 'smtp.mail.ru'),
             'port' => env('MAIL_PORT', 587),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME','denis03.88@mail.ru'),
+            'username' => env('MAIL_USERNAME','localhost@denis03.88@mail.ru'),
             'password' => env('MAIL_PASSWORD','Lgw!H,_gWF3?4xq'),
             'timeout' => null,
             'auth_mode' => null,
@@ -84,7 +84,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'denis03.88@mail.ru'),
+        'address' => 'denis03.88@mail.ru',
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
