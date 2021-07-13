@@ -39,7 +39,7 @@ return [
             'host' => env('MAIL_HOST', 'smtp.mail.ru'),
             'port' => env('MAIL_PORT', 587),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME','denis03.88@mail.ru@progressshop.ru'),
+            'username' => env('MAIL_USERNAME','progressshop@progressshop.ru'),
             'password' => env('MAIL_PASSWORD','Lgw!H,_gWF3?4xq'),
             'timeout' => null,
             'auth_mode' => null,
