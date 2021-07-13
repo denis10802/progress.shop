@@ -39,7 +39,7 @@ return [
             'host' => 'smtp.yandex.ru',
             'port' => 465,
             'encryption' => 'ssl',
-            'username' => 'zakaz@progressshop@progressshop.ru',
+            'username' => 'zakaz@progressshop.ru',
             'password' => 'barin1989',
             'timeout' => null,
             'auth_mode' => null,
