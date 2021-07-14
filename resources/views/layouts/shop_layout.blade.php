@@ -20,6 +20,7 @@
     <!-- Use the minified version files listed below for better performance and remove the files listed above -->
     <link rel="stylesheet" href="/users/css/plugins/plugins.min.css">
     <link rel="stylesheet" href="/users/css/style.min.css">
+    <link rel="stylesheet" href="/users/css/modal.css">
     <!-- Modernizr JS -->
     <script src=/users/js/vendor/modernizr-3.10.0.min.js"></script>
 </head>
@@ -299,6 +300,51 @@
     </footer>
     <!--Footer section end-->
 
+    <!--modal-->
+    <div class="popup" id="popup_1" >
+        <div class="popup__body">
+            <div class="popup__content">
+                <a class="popup__close close-popup">X</a>
+
+                <div class="popup-form form-popup">
+                    <h2 class="popup-form__title">Узнайте точную стоимость <br>наших услуг по телефону!</h2>
+                    <span class="popup-form__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+                    <form >
+                        <input type="text" name="username" class="popup-form__input form-popup__name "
+                               placeholder="Ваше имя" required>
+                        <input type="tel" name="phone" class="telephone popup-form__input form-popup__phone"
+                               placeholder="Ваш телефон" required>
+                        <button class="button popup-form__button">Узнать стоимость </button>
+                        <span class="popup-form__descr" class="popup-form____descr">Или Вы можете перезвонить нам сами по
+						телефону:</span>
+                        <a href="tel:+79173638591" class="popup-form__tel">+7 917 36 38 591</a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    @if (session('success'))
+
+        <div class="popup_thanks active">
+            <div class="thanks">
+                <a class="close-thanks"><img class="close-icons" src="/users//images/close-modal.png" alt=""></a> <!-- При клике происходит закрытие всплывающего окна -->
+                <div class="form-thanks">
+                    <div id="form_response" class="text-center">
+                        <h1 class="popup_thanks__title">Спасибо за заявку!!!</h1>
+                        <p class="popup_thanks__subtitle">{{session('success')}}</p>
+                        <p class="popup_thanks__subtitle">В ближайшее время с Вами свяжется наш специалист.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="overlay-form"></div> <!-- Затемнение фона. При клике закрываем всплывающее окно -->
+        </div>
+
+    @endif
+
+
 
 </div>
 
@@ -314,6 +360,7 @@
 <!-- Use the minified version files listed below for better performance and remove the files listed above -->
 <script src="/users/js/plugins/plugins.min.js"></script>
 <script src="/users/js/main.js"></script>
+<script src="/users/js/modal.js"></script>
 
 </body>
 

@@ -282,7 +282,7 @@
 
         @if (session('success'))
 
-    <div class="popup_thanks">
+    <div class="popup_thanks active">
         <div class="thanks">
             <a class="close-thanks"><img class="close-icons" src="/users//images/close-modal.png" alt=""></a> <!-- При клике происходит закрытие всплывающего окна -->
             <div class="form-thanks">
@@ -320,30 +320,30 @@
 
 
 
-<script>
-    $(document).ready(function(){
-        $("form").submit(function() { // Событие отправки с формы
-            let form_data = $(this).serialize(); // Собираем данные из полей
-            $.ajax({
-                type: "POST", // Метод отправки
-                url: '{{url('sendForm')}}', // Путь к PHP обработчику sendform.php
-                data: form_data,
-                success: function() {
-                    $('.popup_thanks').addClass('active');
+{{--<script>--}}
+{{--    $(document).ready(function(){--}}
+{{--        $("form").submit(function() { // Событие отправки с формы--}}
+{{--            let form_data = $(this).serialize(); // Собираем данные из полей--}}
+{{--            $.ajax({--}}
+{{--                type: "POST", // Метод отправки--}}
+{{--                url: '{{url('sendForm')}}', // Путь к PHP обработчику sendform.php--}}
+{{--                data: form_data,--}}
+{{--                success: function() {--}}
+{{--                    $('.popup_thanks').addClass('active');--}}
 
-                }
-            });
-            event.preventDefault();
-        });
-        $('.close-thanks').click(function () {
-            $('.popup_thanks').removeClass('active');
+{{--                }--}}
+{{--            });--}}
+{{--            event.preventDefault();--}}
+{{--        });--}}
+{{--        $('.close-thanks').click(function () {--}}
+{{--            $('.popup_thanks').removeClass('active');--}}
 
-        });
+{{--        });--}}
 
 
-    });
+{{--    });--}}
 
-</script>
+{{--</script>--}}
 
 
 </body>

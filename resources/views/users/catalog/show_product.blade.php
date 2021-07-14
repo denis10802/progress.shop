@@ -56,7 +56,7 @@
                                 </div>
 
                                 <div class="actions">
-                                    <a href="#" class="add-to-cart">ЗАКАЗАТЬ ЗВОНОК</a>
+                                    <a href="#" name="#popup_1" class="add-to-cart popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
                                 </div>
 
                             </div>
