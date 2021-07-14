@@ -13,6 +13,7 @@ class MailController extends Mailable
 
     public $name;
     public $email;
+    public $telephone;
 
 
 
@@ -21,10 +22,11 @@ class MailController extends Mailable
      *
      * @return void
      */
-    public function __construct($name, $email)
+    public function __construct($name, $email, $telephone)
     {
         $this->name =  $name;
         $this->email = $email;
+        $this->telephone =$telephone;
 
     }
 
@@ -37,8 +39,9 @@ class MailController extends Mailable
     {
         return $this->view('users.mail')->with([
             'name'=>$this->name,
-            'email'=>$this->email
-        ])->subject('новое письмо');
+            'email'=>$this->email,
+            'telephone'=>$this->telephone
+        ])->subject('Форма обратной связи с сайта progressshop.ru');
 
     }
 }

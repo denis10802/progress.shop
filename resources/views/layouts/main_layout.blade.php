@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/users/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="/users/css/vendor/iconfont.min.css">
     <link rel="stylesheet" href="/users/css/vendor/helper.css">
+    <link rel="stylesheet" href="/users/css/modal.css">
 
 {{--     <link rel="stylesheet" href="/users/css/plugins/plugins.css">--}}
 {{--    <link rel="stylesheet" href="/users/css/style.css">--}}
@@ -24,14 +25,13 @@
     <script src="/users/js/vendor/modernizr-3.10.0.min.js"></script>
 </head>
 
-<body class="template-color-1">
+<body class="template-color-1" >
 
-<div id="main-wrapper">
-
+<div id="main-wrapper" >
 
 
     <!--Header section start-->
-    <header class="@section('header-class')header-absolute @show sb-border header-sticky d-none d-lg-block">
+    <header class="@section('header-class')header-absolute @show sb-border header-sticky d-none d-lg-block ">
         <div class="main-header">
             <div class="container-fluid pl-50 pl-lg-15 pl-md-15 pr-0">
                 <div class="row align-items-center no-gutters">
@@ -78,6 +78,7 @@
 
             </div>
         </div>
+
     </header>
     <!--Header section end-->
 
@@ -144,6 +145,7 @@
                 </ul>
             </div>
         </div>
+
     </div>
     <!-- End Popup Menu -->
 
@@ -253,6 +255,50 @@
     </footer>
     <!--Footer section end-->
 
+    <!--modal-->
+    <div class="popup" id="popup_1" >
+        <div class="popup__body">
+            <div class="popup__content">
+                <a class="popup__close close-popup">X</a>
+
+                <div class="popup-form form-popup">
+                    <h2 class="popup-form__title">Узнайте точную стоимость <br>наших услуг по телефону!</h2>
+                    <span class="popup-form__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+                    <form >
+                        <input type="text" name="username" class="popup-form__input form-popup__name "
+                               placeholder="Ваше имя" required>
+                        <input type="tel" name="phone" class="telephone popup-form__input form-popup__phone"
+                               placeholder="Ваш телефон" required>
+                        <button class="button popup-form__button">Узнать стоимость </button>
+                        <span class="popup-form__descr" class="popup-form____descr">Или Вы можете перезвонить нам сами по
+						телефону:</span>
+                        <a href="tel:+79173638591" class="popup-form__tel">+7 917 36 38 591</a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        @if (session('success'))
+
+    <div class="popup_thanks">
+        <div class="thanks">
+            <a class="close-thanks"><img class="close-icons" src="/users//images/close-modal.png" alt=""></a> <!-- При клике происходит закрытие всплывающего окна -->
+            <div class="form-thanks">
+                <div id="form_response" class="text-center">
+                    <h1 class="popup_thanks__title">Спасибо за заявку!!!</h1>
+                    <p class="popup_thanks__subtitle">{{session('success')}}</p>
+                    <p class="popup_thanks__subtitle">В ближайшее время с Вами свяжется наш специалист.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="overlay-form"></div> <!-- Затемнение фона. При клике закрываем всплывающее окно -->
+    </div>
+
+        @endif
+
 
 
 
@@ -270,10 +316,34 @@
 <!-- Use the minified version files listed below for better performance and remove the files listed above -->
 <script src="/users/js/plugins.min.js"></script>
 <script src="/users/js/main.js"></script>
+<script src="/users/js/modal.js"></script>
 
 
 
-<!--End of Zendesk Chat Script-->
+<script>
+    $(document).ready(function(){
+        $("form").submit(function() { // Событие отправки с формы
+            let form_data = $(this).serialize(); // Собираем данные из полей
+            $.ajax({
+                type: "POST", // Метод отправки
+                url: '{{url('sendForm')}}', // Путь к PHP обработчику sendform.php
+                data: form_data,
+                success: function() {
+                    $('.popup_thanks').addClass('active');
+
+                }
+            });
+            event.preventDefault();
+        });
+        $('.close-thanks').click(function () {
+            $('.popup_thanks').removeClass('active');
+
+        });
+
+
+    });
+
+</script>
 
 
 </body>
