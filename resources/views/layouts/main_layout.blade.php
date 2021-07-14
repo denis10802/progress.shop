@@ -64,7 +64,7 @@
                         <div class="header-btn-action d-flex justify-content-end">
                             <div class="btn-action-wrap d-flex">
                                 <div class="jp-author item">
-                                    <a href="#">
+                                    <a  name="#popup_1" class="popup-link">
                                         <i class="lnr lnr-phone-handset"></i>
                                         <span>ЗАКАЗАТЬ ЗВОНОК</span>
                                     </a>
@@ -264,7 +264,7 @@
                 <div class="popup-form form-popup">
                     <h2 class="popup-form__title">Узнайте точную стоимость <br>наших услуг по телефону!</h2>
                     <span class="popup-form__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
-                    <form >
+                    <form action="{{route('sendForm')}}"  method="post">
                         <input type="text" name="username" class="popup-form__input form-popup__name "
                                placeholder="Ваше имя" required>
                         <input type="tel" name="phone" class="telephone popup-form__input form-popup__phone"
