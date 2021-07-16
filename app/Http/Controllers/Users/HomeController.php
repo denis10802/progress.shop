@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Users;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -13,10 +14,12 @@ class HomeController extends Controller
 
     public function index()
     {
-        $categories = Category::all()->random(10);
+        $categories = Category::all()->random(2);
+        $products = Product::all()->random(2);
 
         return view('users.home.index',[
-            'categories'=>$categories
+            'categories'=>$categories,
+            'products'=>$products
         ]);
     }
 

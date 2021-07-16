@@ -81,7 +81,7 @@
                             </button>
 
                             </form>
-                            <a  href="{{route('showSettingImage',$product['id'])}}" class="btn btn-success btn-sm mt-1">
+                            <a  href="{{route('SettingImageProduct',$product['id'])}}" class="btn btn-success btn-sm mt-1">
                                 <i class="fas fa-pencil-alt">
                                 </i>
                                 Изменить изображение

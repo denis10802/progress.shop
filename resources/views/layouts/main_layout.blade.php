@@ -40,7 +40,7 @@
                     <!--Logo start-->
                     <div class="col-xl-2 col-lg-2 col-12">
                         <div class="logo">
-                            <a href="{{route('home')}}"><img  src="/users/images/LOGO.png" alt=""></a>
+                            <a href="{{route('home')}}"><img  src="/users/images/logo-main.png" alt=""></a>
                         </div>
                     </div>
                     <!--Logo end-->
@@ -114,7 +114,7 @@
                                 <div class="col-6 col-md-6">
                                     <div class="header-logo text-center">
                                         <a href="{{route('home')}}">
-                                            <img src="/users/images/mobile-logo.png" class="img-fluid" alt="">
+                                            <img src="/users/images/logo-mobile.png" class="img-fluid" alt="">
                                         </a>
                                     </div>
                                 </div>
@@ -135,7 +135,7 @@
             <div class="mobileheader">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="/users/images/mobile-logo.png" alt="Multipurpose">
+                        <img src="/users/images/logo-mobile.png" alt="Multipurpose">
                     </a>
                 </div>
                 <a class="mobile-close" href="#"></a>

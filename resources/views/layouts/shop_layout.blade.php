@@ -40,7 +40,7 @@
                     <!--Logo start-->
                     <div class="col-xl-2 col-lg-2 col-12">
                         <div class="logo">
-                            <a href="{{route('home')}}"><img width="100%" src="/users/images/LOGO.png" alt=""></a>
+                            <a href="{{route('home')}}"><img width="100%" src="/users/images/logo-main.png" alt=""></a>
                         </div>
                     </div>
                     <!--Logo end-->
@@ -111,7 +111,7 @@
                                 <div class="col-6 col-md-6">
                                     <div class="header-logo text-center">
                                         <a href="{{route('home')}}">
-                                            <img src="/users/images/mobile-logo.png" class="img-fluid" alt="">
+                                            <img src="/users/images/logo-mobile.png" class="img-fluid" alt="">
                                         </a>
                                     </div>
                                 </div>
@@ -132,7 +132,7 @@
             <div class="mobileheader">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="/users/images/mobile-logo.png" alt="Multipurpose">
+                        <img src="/users/images/logo-mobile.png" alt="Multipurpose">
                     </a>
                 </div>
                 <a class="mobile-close" href="index.html#"></a>
@@ -163,7 +163,6 @@
     <div class="shop-section section bg_color--5 pb-120 pb-lg-100 pb-md-80 pb-sm-60 pb-xs-50">
         <div class="container faq-wrapper">
             <div class="row">
-
                 <div class="col-lg-4 col-12 order-lg-1 order-1">
                     <div class="sidebar-wrapper-shop mt-sm-40 mt-xs-30">
                         <div class="common-sidebar-widget sidebar-four">
