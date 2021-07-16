@@ -100,8 +100,7 @@ class ProductController extends Controller
     public function update(Request $request, Product $product)
     {
 
-        Storage::disk('public')->delete($product->image);
-        $product->image = $request->file('image')->store('uploads','public');
+
         $product->title = $request->title;
         $product->wholesale = $request->wholesale;
         $product->retail = $request->retail;

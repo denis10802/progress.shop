@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class CategoryController extends Controller
@@ -101,6 +102,7 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
+        Storage::disk('public')->delete($category->image);
         $category->delete();
         return redirect()->back()->with('success','Категория удалена');
     }

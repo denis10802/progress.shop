@@ -42,7 +42,7 @@
                             </div>
 
                         </div>
-                        <div class="col-lg-5 col-12 mb-sm-30 mb-xs-30">
+                        <div class="col-lg-4 col-12 mb-sm-30 mb-xs-30">
                             <div class="content">
                                 <h3 class="title">{{$product->title}}</h3>
 
@@ -61,7 +61,7 @@
 
                             </div>
                         </div>
-                        <div class="col-lg-3 col-12">
+                        <div class="col-lg-4 col-12">
                             <div class="common-sidebar-widget sidebar-five">
                                 <h2 class="sidebar-title">Категории</h2>
                                 <div class="sidebar-list">

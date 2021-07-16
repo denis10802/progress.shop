@@ -61,6 +61,28 @@ Route::middleware(['role:admin'])->prefix('admin_panel')->group(function ()
     Route::resource('product',ProductController::class);
 
 
+//   set images
+
+    Route::prefix('set-image-category')->group(function (){
+
+        Route::get('/{id}',[\App\Http\Controllers\Admin\ImageCategoryController::class,'SettingImageCategory'])->name('SettingImageCategory');
+
+        Route::post('/{id}/update',[\App\Http\Controllers\Admin\ImageCategoryController::class,'updateImageCategory'])->name('updateImageCategory');
+
+    });
+
+    Route::prefix('set-image-product')->group(function (){
+
+        Route::get('/{id}',[\App\Http\Controllers\Admin\ImageProductController::class,'showSettingImage'])->name('SettingImageProduct');
+
+        Route::post('/{id}/update',[\App\Http\Controllers\Admin\ImageProductController::class,'updateImageProduct'])->name('updateImageProduct');
+    });
+
+// end set images
+
+
+
+//specification
 
 Route::prefix('specification')->group(function (){
 
@@ -74,9 +96,15 @@ Route::prefix('specification')->group(function (){
 
     Route::post('/update/{id}',[App\Http\Controllers\Admin\SpecificationsController::class, 'update'])->name('updateSpecification');
 
+    Route::get('/delete/{id}/',[SpecificationsController::class,'delete'])->name('delete');
+
 });
 
+// end specification
 
+
+
+    //description
     Route::prefix('description')->group(function (){
 
         Route::get('/',[App\Http\Controllers\Admin\DescriptionsController::class, 'index'])->name('description');
@@ -89,15 +117,12 @@ Route::prefix('specification')->group(function (){
 
         Route::post('/update/{id}',[App\Http\Controllers\Admin\DescriptionsController::class, 'update'])->name('update');
 
+        Route::get('/delete/{id}/',[\App\Http\Controllers\Admin\DescriptionsController::class,'delete'])->name('delete');
+
+
     });
 
-
-
-
-
-
-
-
+//end description
 
 
 

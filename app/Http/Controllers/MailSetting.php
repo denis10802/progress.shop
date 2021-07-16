@@ -16,8 +16,12 @@ class MailSetting extends Controller
         $telephone = $request->telephone;
         $recipient = 'zakaz@progressshop.ru';
 
+        if (strlen($email) > 0 || strlen($telephone) > 0) {
 
-        Mail::to($recipient)->send(new MailController($name, $email,$telephone));
+            Mail::to($recipient)->send(new MailController($name, $email,$telephone));
+            return redirect()->back()->with('success','Ваше сообщение успешно отправлено!!!');
+
+        }
 
         return redirect()->back()->with('success','Ваше сообщение успешно отправлено!!!');
 

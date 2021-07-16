@@ -64,4 +64,12 @@ class DescriptionsController extends Controller
 
         return redirect()->back()->with('success','Ваш товар успешно обновлен');
     }
+
+
+    public function delete($id)
+    {
+        DB::table('descriptions')->where('id',$id)->delete();
+        return redirect()->back()->with('success','Ваш пункт описания удален');
+
+    }
 }

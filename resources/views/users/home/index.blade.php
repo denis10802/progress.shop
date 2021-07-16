@@ -12,10 +12,10 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <!--Hero Content start-->
-                        <div class="hero-content-2 left">
-                            <h2 class="title">Top Recruiting Website</h2>
-                            <h3 class="sub-title">For Professionals</h3>
-                            <p>Jobs & Job search. Find jobs in global. Executive jobs & work. Employment</p>
+                        <div class="hero-content-4 right">
+                            <h2 class="title">БЕСПЕРЕБОЙНЫЕ ПОСТАВКИ</h2>
+                            <h3 class="sub-title">CТРОИТЕЛЬНЫХ МАТЕРИАЛОВ</h3>
+                            <p>ДЛЯ СТРОИТЕЛЬСТВА И РЕМОНТА </p>
                         </div>
                     </div>
                 </div>
@@ -33,11 +33,11 @@
                     <!-- Single Feature Start -->
                     <div class="single-feature mb-30">
                         <div class="feature-icon">
-                            <i class="far fa-address-card"></i>
+                            <i class="fas fa-shipping-fast"></i>
                         </div>
                         <div class="feature-content">
-                            <h3 class="title">Complete Resume</h3>
-                            <p>Create resume free & get a job</p>
+                            <h3 class="title">Быстрая доставка </h3>
+                            <p>Мы осуществляем доставку стройматериалов оперативно и точно в срок.</p>
                         </div>
                     </div>
                     <!-- Single Feature End -->
@@ -46,11 +46,11 @@
                     <!-- Single Feature Start -->
                     <div class="single-feature mb-30">
                         <div class="feature-icon">
-                            <i class="far fa-file-alt"></i>
+                            <i class="fas fa-boxes"></i>
                         </div>
                         <div class="feature-content">
-                            <h3 class="title">Post Job Free</h3>
-                            <p>Approach a top million resumes</p>
+                            <h3 class="title">Любые объемы</h3>
+                            <p>Поставка строительных смесей оптом в мешках напрямую с завода-производителя</p>
                         </div>
                     </div>
                     <!-- Single Feature End -->
@@ -59,11 +59,11 @@
                     <!-- Single Feature Start -->
                     <div class="single-feature mb-30">
                         <div class="feature-icon">
-                            <i class="fa fa-search-location"></i>
+                            <i class="fas fa-file-invoice"></i>
                         </div>
                         <div class="feature-content">
-                            <h3 class="title">Find Work</h3>
-                            <p>Get the best jobs in your area</p>
+                            <h3 class="title">Гарантия качества</h3>
+                            <p>Мы гарантирует качество продукции, у нас есть все необходимые сертификаты</p>
                         </div>
                     </div>
                     <!-- Single Feature End -->
@@ -80,185 +80,40 @@
                 <div class="col-lg-12">
                     <div class="section-title-wrap mb-45">
                         <div class="section-title">
-                            <span>JOB FROM EMPLOYERS</span>
-                            <h3 class="title">Companies Spotlight</h3>
+                            <h3 class="title">Каталог продукции</h3>
                         </div>
                         <div class="jetapo-link">
-                            <a href="index.html#">Browse All Employers <i class="lnr lnr-chevron-right"></i></a>
+                            <a href="#">Посмотреть весь каталог <i class="lnr lnr-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row row-five-column no-gutters border-top-left">
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-                    <!-- Single Employer Item Start -->
-                    <div class="employer-item item-border-bottom">
-                        <span class="featured-employer-label">Featured</span>
-                        <div class="employer-image">
-                            <img src="assets/images/companies_logo/logo-1.jpg" alt="">
-                        </div>
-                        <div class="employer-info-top">
-                            <span class="employer-location"><i class="lnr lnr-map-marker"></i>  Beijing, Beijing</span>
-                            <h3 class="employer-name"><a href="employer-details.html">Digital Asset</a></h3>
-                        </div>
-                    </div>
-                    <!-- Single Employer Item End -->
-                </div>
 
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-                    <!-- Single Employer Item Start -->
-                    <div class="employer-item item-border-bottom">
-                        <div class="employer-image">
-                            <img src="assets/images/companies_logo/logo-2.jpg" alt="">
-                        </div>
-                        <div class="employer-info-top">
-                            <span class="employer-location"><i class="lnr lnr-map-marker"></i>  Victoria</span>
-                            <h3 class="employer-name"><a href="employer-details.html">Liquididea Design</a></h3>
-                        </div>
-                    </div>
-                    <!-- Single Employer Item End -->
-                </div>
+                @foreach($categories as $category)
 
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-                    <!-- Single Employer Item Start -->
-                    <div class="employer-item item-border-bottom">
-                        <span class="featured-employer-label">Featured</span>
-                        <div class="rating">
-                            <span class="rating-point">4.3</span>
-                        </div>
-                        <div class="employer-image">
-                            <img src="assets/images/companies_logo/logo-3.jpg" alt="">
-                        </div>
-                        <div class="employer-info-top">
-                            <span class="employer-location"><i class="lnr lnr-map-marker"></i> Osaka, Osaka</span>
-                            <h3 class="employer-name"><a href="employer-details.html">Shippo Company</a></h3>
-                        </div>
-                    </div>
-                    <!-- Single Employer Item End -->
-                </div>
 
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-                    <!-- Single Employer Item Start -->
-                    <div class="employer-item item-border-bottom">
-                        <span class="featured-employer-label">Featured</span>
-                        <div class="rating">
-                            <span class="rating-point">1.7</span>
-                        </div>
-                        <div class="employer-image">
-                            <img src="assets/images/companies_logo/logo-4.jpg" alt="">
-                        </div>
-                        <div class="employer-info-top">
-                            <span class="employer-location"><i class="lnr lnr-map-marker"></i>  Chicago, California</span>
-                            <h3 class="employer-name"><a href="employer-details.html">Alpha Investing <i class="fas fa-check-circle"></i></a></h3>
-                        </div>
-                    </div>
-                    <!-- Single Employer Item End -->
-                </div>
+                        <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+                            <!-- Single Employer Item Start -->
+                            <div class="employer-item item-border-bottom">
+                                <div class="employer-image">
+                                    <img src="{{Storage::url($category->image)}}" alt="">
+                                </div>
+                                <div class="employer-info-top">
 
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-                    <!-- Single Employer Item Start -->
-                    <div class="employer-item item-border-bottom">
-                        <span class="featured-employer-label">Featured</span>
-                        <div class="rating">
-                            <span class="rating-point">5.0</span>
+                                    <h3 class="employer-name"><a href="{{ route('showCategory',$category->slug) }}">{{$category->title}}</a></h3>
+                                </div>
+                            </div>
+                            <!-- Single Employer Item End -->
                         </div>
-                        <div class="employer-image">
-                            <img src="assets/images/companies_logo/logo-5.jpg" alt="">
-                        </div>
-                        <div class="employer-info-top">
-                            <span class="employer-location"><i class="lnr lnr-map-marker"></i>  New York, New York</span>
-                            <h3 class="employer-name"><a href="employer-details.html">Radio Game</a></h3>
-                        </div>
-                    </div>
-                    <!-- Single Employer Item End -->
-                </div>
 
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-                    <!-- Single Employer Item Start -->
-                    <div class="employer-item item-border-bottom">
-                        <div class="rating">
-                            <span class="rating-point">4.0</span>
-                        </div>
-                        <div class="employer-image">
-                            <img src="assets/images/companies_logo/logo-6.jpg" alt="">
-                        </div>
-                        <div class="employer-info-top">
-                            <span class="employer-location"><i class="lnr lnr-map-marker"></i>Seville, Andalusia</span>
-                            <h3 class="employer-name"><a href="employer-details.html">Digital Vine <i class="fas fa-check-circle"></i></a></h3>
-                        </div>
-                    </div>
-                    <!-- Single Employer Item End -->
-                </div>
 
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-                    <!-- Single Employer Item Start -->
-                    <div class="employer-item item-border-bottom">
-                        <span class="featured-employer-label">Featured</span>
-                        <div class="rating">
-                            <span class="rating-point">5.0</span>
-                        </div>
-                        <div class="employer-image">
-                            <img src="assets/images/companies_logo/logo-7.jpg" alt="">
-                        </div>
-                        <div class="employer-info-top">
-                            <span class="employer-location"><i class="lnr lnr-map-marker"></i>  London, England</span>
-                            <h3 class="employer-name"><a href="employer-details.html">Vsmarttech</a></h3>
-                        </div>
-                    </div>
-                    <!-- Single Employer Item End -->
-                </div>
+                @endforeach
 
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-                    <!-- Single Employer Item Start -->
-                    <div class="employer-item item-border-bottom">
-                        <div class="rating">
-                            <span class="rating-point">3.9</span>
-                        </div>
-                        <div class="employer-image">
-                            <img src="assets/images/companies_logo/logo-8.jpg" alt="">
-                        </div>
-                        <div class="employer-info-top">
-                            <span class="employer-location"><i class="lnr lnr-map-marker"></i>  Hamburg, Hamburg</span>
-                            <h3 class="employer-name"><a href="employer-details.html">BowThemes</a></h3>
-                        </div>
-                    </div>
-                    <!-- Single Employer Item End -->
-                </div>
 
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-                    <!-- Single Employer Item Start -->
-                    <div class="employer-item item-border-bottom">
-                        <span class="featured-employer-label">Featured</span>
-                        <div class="rating">
-                            <span class="rating-point">5.0</span>
-                        </div>
-                        <div class="employer-image">
-                            <img src="assets/images/companies_logo/logo-9.jpg" alt="">
-                        </div>
-                        <div class="employer-info-top">
-                            <span class="employer-location"><i class="lnr lnr-map-marker"></i> Dhaka, Bangladesh</span>
-                            <h3 class="employer-name"><a href="employer-details.html">HasThemes</a></h3>
-                        </div>
-                    </div>
-                    <!-- Single Employer Item End -->
-                </div>
 
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-                    <!-- Single Employer Item Start -->
-                    <div class="employer-item item-border-bottom">
-                        <div class="rating">
-                            <span class="rating-point">4.9</span>
-                        </div>
-                        <div class="employer-image">
-                            <img src="assets/images/companies_logo/logo-10.jpg" alt="">
-                        </div>
-                        <div class="employer-info-top">
-                            <span class="employer-location"><i class="lnr lnr-map-marker"></i>  Hanoi, Hà Nội</span>
-                            <h3 class="employer-name"><a href="employer-details.html">HasTech</a></h3>
-                        </div>
-                    </div>
-                    <!-- Single Employer Item End -->
-                </div>
+
+
             </div>
         </div>
     </div>

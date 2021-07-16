@@ -57,12 +57,21 @@ class SpecificationsController extends Controller
 
     public function update(Request $request, $id)
     {
+
         DB::table('specifications')->where('id',$id)->update([
             'name_param' => $request->name_param,
             'param' => $request->param,
         ]);
 
         return redirect()->back()->with('success','Ваш товар успешно обновлен');
+    }
+
+
+    public function delete($id)
+    {
+        DB::table('specifications')->where('id',$id)->delete();
+        return redirect()->back()->with('success','Ваш пункт спецификации удален');
+
     }
 
 

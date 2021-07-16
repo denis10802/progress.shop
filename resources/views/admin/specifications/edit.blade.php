@@ -120,14 +120,13 @@
                             Изменить
                         </a>
 
-                        <form action="" method="POST" style="display: inline-block">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class="btn btn-danger btn-sm" >
-                                <i class="fas fa-trash">
-                                </i>
+
+                            <a  href="{{route('delete',$specification['id'])}}" class="btn btn-danger btn-sm">
+
+                                <i class="fas fa-trash"></i>
                                 Удалить
-                            </button>
+                            </a>
+
                         </form>
                     </td>
 

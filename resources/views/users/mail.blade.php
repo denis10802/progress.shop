@@ -8,17 +8,17 @@
     <title>Document</title>
 </head>
 <body>
-<h1>Данные заказчика</h1>
-<h2>Имя:</h2>
+
+<h3>Данные заказчика</h3>
+<h4>Имя:</h4>
 <strong>{{$name}}</strong>
-<h2>Почта:</h2>
+<h4>Почта:</h4>
 <strong>{{$email}}</strong>
-<h2>Тел:</h2>
+<h4>Тел:</h4>
 <strong>{{$telephone}}</strong>
 
 
 </body>
 </html>
-Name :
-Email:{{$email}}
+
 

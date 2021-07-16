@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/users/css/vendor/iconfont.min.css">
     <link rel="stylesheet" href="/users/css/vendor/helper.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/users/css/modal.css">
     <!-- <link rel="stylesheet" href="assets/css/plugins/plugins.css"> -->
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
 
@@ -62,11 +63,18 @@
                     <!-- Cart & Search Area Start -->
                     <div class="col-xl-3 col-lg-3 col-12">
                         <div class="header-btn-action d-flex justify-content-end">
-                            <div class="btn-action-wrap d-flex">
+                            <div class="btn-action-wrap display-flex">
                                 <div class="jp-author item">
                                     <a  name="#popup_1" class="popup-link">
-                                        <i class="lnr lnr-phone-handset"></i>
+                                        <i class="lnr lnr-pointer-right"></i>
                                         <span>ЗАКАЗАТЬ ЗВОНОК</span>
+                                    </a>
+                                </div>
+                                <div class="jp-author item">
+                                    <a href="tel:+79112923414">
+                                        <i class="lnr lnr-phone-handset"></i>
+                                        <span> +7 911 292-34-14</span>
+
                                     </a>
                                 </div>
 
@@ -156,7 +164,7 @@
         <div class="container faq-wrapper">
             <div class="row">
 
-                <div class="col-lg-3 col-12 order-lg-1 order-1">
+                <div class="col-lg-4 col-12 order-lg-1 order-1">
                     <div class="sidebar-wrapper-shop mt-sm-40 mt-xs-30">
                         <div class="common-sidebar-widget sidebar-four">
                             <h2 class="sidebar-title">Категории</h2>
@@ -310,15 +318,17 @@
                     <h2 class="popup-form__title">Узнайте точную стоимость <br>наших услуг по телефону!</h2>
                     <span class="popup-form__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
                     <form action="{{route('sendForm')}}"  method="post">
-                        <input type="text" name="username" class="popup-form__input form-popup__name "
+                        @csrf
+                        <input type="text" name="name" class="popup-form__input form-popup__name "
                                placeholder="Ваше имя" required>
-                        <input type="tel" name="phone" class="telephone popup-form__input form-popup__phone"
+                        <input type="tel" name="telephone" class="telephone popup-form__input form-popup__phone"
                                placeholder="Ваш телефон" required>
                         <button class="button popup-form__button">Узнать стоимость </button>
                         <span class="popup-form__descr" class="popup-form____descr">Или Вы можете перезвонить нам сами по
 						телефону:</span>
-                        <a href="tel:+79173638591" class="popup-form__tel">+7 917 36 38 591</a>
                     </form>
+                        <a href="tel:+79112923414" class="popup-form__tel">+7 911 292-34-14</a>
+
                 </div>
 
             </div>
@@ -362,7 +372,15 @@
 <script src="/users/js/main.js"></script>
 <script src="/users/js/modal.js"></script>
 
+<script>
+
+    $('.close-thanks').click(function () {
+        $('.popup_thanks').removeClass('active');
+
+    });
+</script>
+
 </body>
 
 </html>
-/users/
+

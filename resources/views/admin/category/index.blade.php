@@ -34,7 +34,7 @@
                            Название
                         </th>
 
-                        <th style="width: 30%">
+                        <th style="width: 40%">
                         </th>
 
                     </tr>
@@ -56,6 +56,11 @@
                                 <i class="fas fa-pencil-alt">
                                 </i>
                                 Редактировать
+                            </a>
+                            <a class="btn btn-success btn-sm" href="{{route('SettingImageCategory',$category['id'])}}">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+                                Изменить изображение
                             </a>
 
                             <form action="{{route('category.destroy', $category['id'])}}" method="POST" style="display: inline-block">

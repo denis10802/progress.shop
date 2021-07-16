@@ -70,6 +70,7 @@
                                 </i>
                                 Изменить
                             </a>
+
                             <form action="{{route('product.destroy', $product['id'])}}" method="POST" style="display: inline-block">
                                 @csrf
                                 @method('DELETE')
@@ -78,7 +79,13 @@
                                 </i>
                                 Удалить
                             </button>
+
                             </form>
+                            <a  href="{{route('showSettingImage',$product['id'])}}" class="btn btn-success btn-sm mt-1">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+                                Изменить изображение
+                            </a>
                         </td>
                     </tr>
                     @endforeach

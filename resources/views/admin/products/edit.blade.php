@@ -10,7 +10,7 @@
                 <div class="col-sm-6">
 
 
-                    <h1 class="m-0">Редактировать товар - {{$products['id']}}</h1>
+                    <h1 class="m-0">Редактировать товар - {{$products->title}}</h1>
 
 
 
@@ -33,15 +33,7 @@
         <div class="container-fluid">
             <div class="card card-primary">
 
-                <div class="card-body">
 
-                    <div class="form-group">
-                        <label>Изображение</label>
-                        <div class="col-6">
-                            <img src="{{Storage::url($products->image)}}" class="product-image text-center" alt="Product Image">
-                        </div>
-                    </div>
-                </div>
 
 
                 <!-- /.card-header -->
@@ -91,16 +83,7 @@
                         </div>
 
                     </div>
-                    <!-- /.card-body -->
-                    <div class="form-group">
-                        <div class="wrapper">
-                            <div class="preview"></div>
-                            <label class="file">
-                                <input type="file" name="image" accept="image/jpeg,image/png" >
-                                <span>Добавить изображение</span>
-                            </label>
-                        </div>
-                    </div>
+
 
                     <div class="card-footer">
                         <button type="submit" class="btn btn-primary start">Изменить</button>

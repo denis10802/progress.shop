@@ -30,20 +30,11 @@
 
 @section('content')
 
-    <div class="col-lg-9 col-12 order-lg-2 order-1">
+    <div class="col-lg-8 col-12 order-lg-2 order-1">
         <div class="row">
 
             <div class="col-lg-12">
-                <div class="archive-shop-actions mb-30">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="archive-shop-inner text-center text-sm-left">
-                                <p>Showing {{$cat->products->count()}}</p>
-                            </div>
-                        </div>
 
-                    </div>
-                </div>
                 <div class="shop-product">
                     <div class="row">
                         @foreach($cat->products as $product)

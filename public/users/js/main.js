@@ -844,6 +844,10 @@ $.scrollUp({
 // 	}
 // }
 
+    $('.close-thanks').click(function () {
+        $('.popup_thanks').removeClass('active');
+
+    });
 
 
 })(jQuery);
