@@ -15,6 +15,16 @@
     <link rel="stylesheet" href="/users/css/vendor/helper.css">
     <link rel="stylesheet" href="/users/css/modal.css">
 
+{{--    favicon --}}
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/users/images/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/users/images/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/users/images/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/users/images/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="/users/images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
 {{--     <link rel="stylesheet" href="/users/css/plugins/plugins.css">--}}
 {{--    <link rel="stylesheet" href="/users/css/style.css">--}}
 
@@ -39,7 +49,7 @@
 
                     <!--Logo start-->
                     <div class="col-xl-2 col-lg-2 col-12">
-                        <div class="logo">
+                        <div class="logo mb-3">
                             <a href="{{route('home')}}"><img  src="/users/images/logo-main.png" alt=""></a>
                         </div>
                     </div>
@@ -173,69 +183,63 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-xl-4 col-lg-3 col-md-6">
+                    <div class="col-xl-5 col-lg-3 col-md-6">
                         <!-- Footer Widget Start -->
                         <div class="footer-widget mb-30">
-                            <h6 class="title">Contact Info</h6>
+                            <h6 class="title">Наши контакты</h6>
                             <div class="address">
                                 <i class="lnr lnr-map-marker"></i>
-                                <span>8375 E. Heather Drive Tonawanda, Manchester 14150, United Kingdom</span>
+                                <span>Юридический адрес 195220, город Санкт- Петербург, Кушелевская дорога, дом 7 корпус 4 литер А, квартира 574
+
+</span>
+                            </div>
+                            <div class="address">
+                                <i class="lnr lnr-apartment"></i>
+                                <span>Общество с ограниченной ответственностью «Прогресс»
+
+</span>
                             </div>
                             <div class="email">
                                 <i class="lnr lnr-envelope"></i>
-                                <span>jopota@recruitment.com</span>
+                                <span>zakaz@progressshop.ru</span>
                             </div>
-                            <div class="phone theme-color">(+1) 000 987-1234</div>
+                            <div class="phone theme-color"><i class="lnr lnr-phone-handset"></i> +7 (911) 292-34-14 </div>
                         </div>
                         <!-- Footer Widget End -->
                     </div>
 
-                    <div class="col-xl-2 col-lg-2 col-md-6">
+                    <div class="col-xl-4 col-lg-2 col-md-6">
                         <!-- Footer Widget Start -->
                         <div class="footer-widget mb-30">
-                            <h6 class="title">Useful Links</h6>
+                            <h6 class="title">Интернет магазин Прогресс</h6>
                             <div class="footer-widget-link">
                                 <ul>
-                                    <li><a href="index.html#">Press Corner</a></li>
-                                    <li><a href="index.html#">Policy Privacy</a></li>
-                                    <li><a href="index.html#">Terms And Conditions</a></li>
-                                    <li><a href="index.html#">Partner</a></li>
-                                    <li><a href="index.html#">Help Center</a></li>
-                                    <li><a href="index.html#">Contact Us</a></li>
+                                    <li><a href="{{route('showContacts')}}">Контакты</a></li>
+                                    <li><a href="{{route('showAbout')}}">O компании</a></li>
+                                    <li><a href="{{route('showDelivery')}}">Доставка и оплата</a></li>
+                                    <li><a href="#">Политика конфиденциальности</a></li>
                                 </ul>
                             </div>
                         </div>
                         <!-- Footer Widget End -->
                     </div>
 
-                    <div class="col-xl-2 col-lg-3 col-md-6">
+                    <div class="col-xl-3 col-lg-3 col-md-6">
                         <!-- Footer Widget Start -->
                         <div class="footer-widget mb-30">
-                            <h6 class="title">Featured Jobs</h6>
+                            <h6 class="title">Магазин</h6>
                             <div class="footer-widget-link">
                                 <ul>
-                                    <li><a href="index.html#">Teachers</a></li>
-                                    <li><a href="index.html#">Accounting</a></li>
-                                    <li><a href="index.html#">Customer Service</a></li>
-                                    <li><a href="index.html#">Digital Marketing</a></li>
-                                    <li><a href="index.html#">Web & Software Dev</a></li>
-                                    <li><a href="index.html#">Science & Analitycs</a></li>
+                                    <li><a href="{{route('catalog')}}">Все товары</a></li>
+                                    <li><a href="{{route('catalog')}}">Все категории</a></li>
+
                                 </ul>
                             </div>
                         </div>
                         <!-- Footer Widget End -->
                     </div>
 
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <!-- Footer Widget Start -->
-                        <div class="footer-widget mb-30">
-                            <h6 class="title">Newsletter</h6>
-                            <div class="newsletter">
-                                <p>Join our email subscription now to get updates on <strong>new jobs</strong> and <strong>notifications</strong>.</p>
-                            </div>
-                        </div>
-                        <!-- Footer Widget End -->
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -247,14 +251,14 @@
                 <div class="row no-gutters st-border pt-35 pb-35 align-items-center justify-content-between">
                     <div class="col-lg-6 col-md-6">
                         <div class="copyright">
-                            <p>&copy;2020 <a href="#">Jetapo</a>. All rights reserved.</p>
+                            <p>&copy;{{date('Y')}} <a href="{{route('home')}}">Прогресс</a>. Все права защищены.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="footer-social">
-                            <a href="index.html#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="index.html#"><i class="fab fa-instagram"></i></a>
-                            <a href="index.html#"><i class="fab fa-google"></i></a>
+                            <a href="index.html#"><i class="fab fa-vk"></i></a>
+                            <a href="index.html#"><i class="fab fa-telegram"></i></a>
+                            <a href="index.html#"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>

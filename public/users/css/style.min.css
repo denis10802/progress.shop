@@ -279,7 +279,7 @@ img {
   background-size: contain !important; }
 
 .bg_image--1 {
-  background-image: url(../images/bg/main-block.jpg);
+  background-image: url(../images/bg/main-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -2608,7 +2608,12 @@ body.template-color-4 {
 
 .hero-content-4.center {
   text-align: center;
+    margin-top: 350px;
+    text-shadow: #1dae0e 0 0 4px;
 }
+@media only screen and (max-width: 767px) {
+    .hero-content-4.center {
+        margin-top: 0; } }
 
 .hero-content-4.right {
   text-align: right;
@@ -3199,8 +3204,8 @@ body.template-color-4 {
   .single-job .job-image {
     height: auto;
     border: none;
-    width: 80px;
-    min-width: 80px;
+      width: 150px;
+      min-width: 150px;
     text-align: center;
     margin: 0 30px 0 0;
     padding: 10px 0; }
