@@ -30,6 +30,8 @@
 
 @section('content')
 
+
+
     <div class="col-lg-8 col-12 order-lg-2 order-1">
         <div class="row">
 
@@ -50,8 +52,13 @@
                                     <div class="product-content">
                                         <h4 class="title"><a href="{{route('showProduct', [$product->category->slug, $product->id])}}">{{$product['title']}}</a></h4>
 
-                                        <h4 class="price"><span>${{$product['wholesale']}}</span>
-                                            <span class="new">${{$product['retail']}}</span></h4>
+                                        <h4 class="price price-flex">
+                                            <i style="font-size: 14px">В розницу</i>
+                                            <span class="new">{{$product->retail}} <i class="fas fa-ruble-sign"></i></span>
+                                            <i style="font-size: 14px">Оптом</i>
+                                            <span class="old">{{$product->wholesale}} <i class="fas fa-ruble-sign"></i></span>
+
+                                        </h4>
                                     </div>
                                 </div>
                             </div>

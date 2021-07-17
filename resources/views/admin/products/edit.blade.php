@@ -55,11 +55,11 @@
                                 <div class="row">
                                     <div class="col-3">
                                         <label for="price-1">Розничная цена</label>
-                                        <input type="text" value="{{$products['wholesale']}}" name="wholesale" class="form-control" id="price-1" placeholder="Розница">
+                                        <input type="text" value="{{$products['wholesale']}}" name="retail" class="form-control" id="price-1" placeholder="Розница">
                                     </div>
                                     <div class="col-4">
                                         <label for="price-2">Оптовая цена</label>
-                                        <input type="text" value="{{$products['retail']}}" name="retail" class="form-control" id="price-2" placeholder="Опт">
+                                        <input type="text" value="{{$products['retail']}}" name="wholesale" class="form-control" id="price-2" placeholder="Опт">
                                     </div>
                                 </div>
                             </div>

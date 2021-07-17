@@ -46,10 +46,13 @@
                             <div class="content">
                                 <h3 class="title">{{$product->title}}</h3>
 
-                                <h3 class="price">
-                                    <span>${{$product->wholesale}}</span>
-                                    <span class="new">${{$product->retail}}</span>
-                                </h3>
+                                <h4 class="price price-flex">
+                                    <i style="font-size: 14px">В розницу</i>
+                                    <span class="new">{{$product->retail}} <i class="fas fa-ruble-sign"></i></span>
+                                    <i style="font-size: 14px">Оптом</i>
+                                    <span class="old">{{$product->wholesale}} <i class="fas fa-ruble-sign"></i></span>
+
+                                </h4>
 
                                 <div class="desc">
                                     <p>{{$product->descr}}</p>
@@ -83,6 +86,7 @@
                     <ul class="product-details-tab-list nav">
                         <li><a class="active show" href="#product-description" data-toggle="tab">Описание продукта</a></li>
                         <li><a href="#product-review" data-toggle="tab">Технические характеристики</a></li>
+                        <li><a href="#buy_with_this_product" data-toggle="tab">С этим товаром покупают </a></li>
                     </ul>
                     <div class="tab-content">
                         <div id="product-description" class="tab-pane active show">
@@ -126,8 +130,55 @@
 
                             </div>
                         </div>
+                        <div id="buy_with_this_product" class="tab-pane">
+                            <div class="col-12 ">
+                                <div class="row">
+
+
+                                    <div class="product-slider-3 section">
+                                    @foreach($products as $product)
+
+                                        <!-- Start Single Product -->
+                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                                <div class="single-product">
+                                                    <div class="product-image">
+                                                        <a href="{{route('showProduct', [$product->category->slug, $product->id])}}">
+                                                            <img src="{{Storage::url($product->image)}}" alt>
+
+                                                        </a>
+
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <h4 class="title">
+                                                            <a href="{{route('showProduct', [$product->category->slug, $product->id])}}">
+                                                                {{$product->title}}
+                                                            </a>
+                                                        </h4>
+
+                                                        <h4 class="price price-flex">
+                                                            <i style="font-size: 14px">В розницу</i>
+                                                            <span class="new">{{$product->retail}} <i class="fas fa-ruble-sign"></i></span>
+                                                            <i style="font-size: 14px">Оптом</i>
+                                                            <span class="old">{{$product->wholesale}} <i class="fas fa-ruble-sign"></i></span>
+
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Product -->
+                                        @endforeach
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+
 
 
 

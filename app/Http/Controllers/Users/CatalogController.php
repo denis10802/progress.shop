@@ -38,11 +38,13 @@ class CatalogController extends Controller
 
        $product = Product::where('id',$id)->first();
 
+       $products = Product::all()->random(5);
+
 
 
        return view('users.catalog.show_product',[
-
-           'product'=>$product
+           'product'=>$product,
+           'products'=>$products
        ]);
 
    }

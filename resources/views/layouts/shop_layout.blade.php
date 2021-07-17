@@ -227,7 +227,7 @@
                     <div class="col-xl-4 col-lg-2 col-md-6">
                         <!-- Footer Widget Start -->
                         <div class="footer-widget mb-30">
-                            <h6 class="title">Интернет магазин Прогресс</h6>
+                            <h6 class="title">Интернет-магазин Прогресс</h6>
                             <div class="footer-widget-link">
                                 <ul>
                                     <li><a href="{{route('showContacts')}}">Контакты</a></li>

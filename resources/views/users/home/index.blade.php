@@ -120,7 +120,7 @@
                     <div class="section-title-wrap mb-45">
                         <div class="section-title">
                             <span>SEASON FEATURE JOBS</span>
-                            <h3 class="title">Job Will You Love</h3>
+                            <h3 class="title">Популярные товары</h3>
                         </div>
                         <div class="jetapo-link">
                             <a href="{{route('catalog')}}">Посмотреть вce товары <i class="lnr lnr-chevron-right"></i></a>

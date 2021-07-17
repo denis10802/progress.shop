@@ -1000,7 +1000,7 @@ button.ht-btn {
     display: block;
     color: #333333; }
   .slick-slider .slick-arrow.slick-prev {
-    left: -60px; }
+    left: -30px; }
     @media only screen and (min-width: 1200px) and (max-width: 1499px) {
       .slick-slider .slick-arrow.slick-prev {
         left: 20px; } }
@@ -1014,7 +1014,7 @@ button.ht-btn {
       .slick-slider .slick-arrow.slick-prev {
         left: 20px; } }
   .slick-slider .slick-arrow.slick-next {
-    right: -60px; }
+    right: -30px; }
     @media only screen and (min-width: 1200px) and (max-width: 1499px) {
       .slick-slider .slick-arrow.slick-next {
         right: 20px; } }
@@ -6883,6 +6883,10 @@ body.template-color-4 {
 .archive-shop-inner .nice-select {
   float: right;
   width: 250px; }
+/*.single-product{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
 
 .single-product .product-image {
   position: relative;
@@ -6960,15 +6964,15 @@ body.template-color-4 {
   line-height: 1;
   margin: 0; }
   .single-product .product-content .price span.old {
-    opacity: .5;
+
     display: inline-block;
-    color: #666;
-    font-size: 16px;
+    color: #000!important;
+      line-height: 30px;
+    font-size: 18px;
     font-weight: 400;
-    text-decoration: line-through;
     margin-right: 5px; }
   .single-product .product-content .price span.new {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 30px;
     color: #ff3434;
     font-weight: 700; }
@@ -7006,17 +7010,19 @@ body.template-color-4 {
 
 .product-details .product-inner .content .price {
   line-height: 1;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;}
   .product-details .product-inner .content .price span.old {
-    opacity: .5;
+
     display: inline-block;
     color: #666;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
-    text-decoration: line-through;
-    margin-right: 5px; }
+    margin-right: 5px;
+      line-height: 30px;}
   .product-details .product-inner .content .price span.new {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 30px;
     color: #ff3434;
     font-weight: 700; }
@@ -9537,4 +9543,8 @@ body.template-color-4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.price-flex{
+    display: flex;
+    flex-direction: column;
 }
