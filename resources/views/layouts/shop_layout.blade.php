@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="/users/css/modal.css">
     <!-- Modernizr JS -->
     <script src=/users/js/vendor/modernizr-3.10.0.min.js"></script>
+    <script src="//code-ya.jivosite.com/widget/9VeYpxMVho" async></script>
 </head>
 
 <body class="template-color-1">
