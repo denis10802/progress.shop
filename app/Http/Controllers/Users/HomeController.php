@@ -14,8 +14,8 @@ class HomeController extends Controller
 
     public function index()
     {
-        $categories = Category::all()->random(2);
-        $products = Product::all()->random(2);
+        $categories = Category::all()->random(10);
+        $products = Product::all()->random(10);
 
         return view('users.home.index',[
             'categories'=>$categories,
