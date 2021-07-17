@@ -7034,6 +7034,14 @@ body.template-color-4 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: 30px; }
+.product-details .product-inner .content .actions-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 10px; }
+
   .product-details .product-inner .content .actions .pro-qty {
     text-align: center;
     border: 1px solid #eeeeee; }
@@ -7057,14 +7065,27 @@ body.template-color-4 {
     color: #ffffff;
     text-transform: none;
     padding: 0 20px;
-    width: 160px;
-    height: 46px;
     line-height: 46px;
     background: #1dae0e;
     -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    margin-left: 10px; }
+    }
+.product-details .product-inner .content .actions-2 .info-cart{
+    background: #138496;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 0 20px;
+    line-height: 46px;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text
+}
+
     .product-details .product-inner .content .actions .add-to-cart:hover {
       background-color: #333333; }
     @media only screen and (max-width: 479px) {

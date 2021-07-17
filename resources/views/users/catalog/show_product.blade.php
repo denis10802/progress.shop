@@ -61,6 +61,9 @@
                                 <div class="actions">
                                     <a href="#" name="#popup_1" class="add-to-cart popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
                                 </div>
+                                <div class="actions-2">
+                                    <a href="#" name="#popup_1" class="info-cart  popup-link">Получить консультацию</a>
+                                </div>
 
                             </div>
                         </div>
