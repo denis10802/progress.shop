@@ -5046,7 +5046,6 @@ body.template-color-4 {
     font-weight: 700;
     font-size: 28px;
     line-height: 42px;
-    margin-top: 60px;
     margin-bottom: 20px; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .employer-main-content .field-description h3, .employer-main-content .field-skills h3, .employer-main-content .field-Gallery h3 {
@@ -9156,7 +9155,7 @@ body.template-color-4 {
     .social-icon li a.facebook {
       background-color: #4867AA; }
     .social-icon li a.twitter {
-      background-color: #1DA1F2; }
+      background-color: #1dae0e; }
     .social-icon li a.linkedin {
       background-color: #007BB6; }
     .social-icon li a.youtube {

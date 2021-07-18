@@ -275,7 +275,7 @@
                         <div class="footer-social">
                             <a href="index.html#"><i class="fab fa-vk"></i></a>
                             <a href="index.html#"><i class="fab fa-telegram"></i></a>
-                            <a href="index.html#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>

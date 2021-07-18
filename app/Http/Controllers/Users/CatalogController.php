@@ -38,7 +38,7 @@ class CatalogController extends Controller
 
        $product = Product::where('id',$id)->first();
 
-       $products = Product::all()->random(10);
+       $products = Product::all()->random(2);
 
 
 

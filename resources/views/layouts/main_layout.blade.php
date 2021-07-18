@@ -259,7 +259,7 @@
                         <div class="footer-social">
                             <a href="index.html#"><i class="fab fa-vk"></i></a>
                             <a href="index.html#"><i class="fab fa-telegram"></i></a>
-                            <a href="index.html#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
@@ -313,12 +313,7 @@
         <div class="overlay-form"></div> <!-- Затемнение фона. При клике закрываем всплывающее окно -->
     </div>
 
-
-
         @endif
-
-
-
 
 </div>
 
@@ -335,12 +330,6 @@
 <script src="/users/js/plugins.min.js"></script>
 <script src="/users/js/main.js"></script>
 <script src="/users/js/modal.js"></script>
-
-
-
-
-
-
 
 </body>
 

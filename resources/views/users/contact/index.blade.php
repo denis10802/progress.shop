@@ -15,10 +15,10 @@
                 <div class="col-12">
                     <div class="page-breadcrumb-content">
                         <ul class="page-breadcrumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li>Contact Us</li>
+                            <li><a href="{{route('home')}}">Главная</a></li>
+                            <li>Контакты</li>
                         </ul>
-                        <h1>Contact Us</h1>
+                        <h1>Наши контакты</h1>
                     </div>
                 </div>
             </div>
@@ -30,40 +30,39 @@
         <div class="container contact-wrapper">
             <div class="row row-30">
 
-                <div class="col-lg-4">
-                    <!-- Map Area Start -->
-                    <div class="contact-info mb-30">
-                        <h2 class="title">Location</h2>
-                        <div class="contact-map-area">
-                            <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.986005919501!2d-73.9685579655238!3d40.75862446708152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258e4a1c884e5%3A0x24fe1071086b36d5!2sThe%20Atrium!5e0!3m2!1sen!2sbd!4v1585132512970!5m2!1sen!2sbd" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </div>
-                    </div>
-                    <!-- Map Area End -->
-                </div>
 
-                <div class="col-lg-4">
+
+                <div class="col-lg-7">
                     <!-- Contact info Start -->
                     <div class="contact-info mb-30">
-                        <h2 class="title">Contact info</h2>
+                        <h2 class="title">Контакты</h2>
                         <div class="contact-information">
                             <div class="info">
+                                <span class="title">Наименование:</span>
+                                <span class="text">ООО «Прогресс»</span>
+                            </div>
+                            <div class="info">
+                                <span class="title">Телефон:</span>
+                                <span class="text phone">+7 911 292-34-14</span>
+                            </div>
+                            <div class="info">
                                 <span class="title">Email:</span>
-                                <span class="text">jetpato@gmail.com</span>
+                                <span class="text">zakaz@progressshop.ru</span>
                             </div>
                             <div class="info">
-                                <span class="title">Phone:</span>
-                                <span class="text phone">(+1) 000 987-1234</span>
+                                <span class="title">ОГРН:</span>
+                                <span class="text">1207800091487</span>
                             </div>
                             <div class="info">
-                                <span class="title">Address:</span>
-                                <span class="text">142 West newton, New York 19088 United States</span>
+                                <span class="title">ИНН/КПП:</span>
+                                <span class="text">7804672598/ 780401001</span>
                             </div>
                             <div class="info">
-                                <span class="title">Follow us:</span>
+                                <span class="title">Подписывайтесь на нас:</span>
                                 <ul class="social-icon">
-                                    <li><a class="facebook" href="contact.html#"><i class="fab fa-facebook"></i></a></li>
-                                    <li><a class="twitter" href="contact.html#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a class="linkedin" href="contact.html#"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a class="facebook" href="contact.html#"><i class="fab fa-telegram-plane"></i></a></li>
+                                    <li><a class="twitter" target="_blank" href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a class="linkedin" href="contact.html#"><i class="fab fa-vk"></i></a></li>
                                     <li><a class="youtube" href="contact.html#"><i class="fab fa-youtube"></i></a></li>
                                 </ul>
                             </div>
@@ -72,34 +71,34 @@
                     <!-- Contact info End -->
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-5">
                     <!-- Contact info Start -->
                     <div class="contact-info mb-30">
-                        <h2 class="title">Contact form</h2>
+                        <h2 class="title">Напишите нам</h2>
                         <div class="contact-form">
                             <form action="{{route('sendForm')}}"  method="post">
                                 @csrf
-                                <p>Please send us a message by filling out the form below and we will get back with you</p>
+
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="single-input">
-                                            <input type="text" placeholder="Your Name *" name="name">
+                                            <input type="text" placeholder="Ваше имя" name="name" required>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="single-input">
-                                            <input type="email" placeholder="Email *" name="email">
+                                            <input type="email" placeholder="Ваш Email-адрес " name="email" required>
                                         </div>
                                     </div>
 
                                     <div class="col-12">
                                         <div class="single-input">
-                                            <input type="tel" placeholder="Telephone *" name="telephone">
+                                            <input type="tel" placeholder="Ваш телефон" name="telephone" required>
                                         </div>
                                     </div>
 
                                     <div class="col-12 mb-40">
-                                        <button class="ht-btn">Send</button>
+                                        <button class="ht-btn">Отправить</button>
                                         <p class="form-messege"></p>
                                     </div>
                                 </div>
