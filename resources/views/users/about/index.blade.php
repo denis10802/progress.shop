@@ -23,8 +23,8 @@
                 <div class="col-12">
                     <div class="page-breadcrumb-content">
                         <ul class="page-breadcrumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li>About us</li>
+                            <li><a href="{{route('home')}}">Главная</a></li>
+                            <li>О компании</li>
                         </ul>
                         <h1>About Jetapo</h1>
                     </div>

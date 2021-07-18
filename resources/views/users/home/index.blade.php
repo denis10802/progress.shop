@@ -119,7 +119,7 @@
                 <div class="col-lg-12">
                     <div class="section-title-wrap mb-45">
                         <div class="section-title">
-                            <span>SEASON FEATURE JOBS</span>
+
                             <h3 class="title">Популярные товары</h3>
                         </div>
                         <div class="jetapo-link">
