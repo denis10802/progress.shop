@@ -9555,7 +9555,7 @@ body.template-color-4 {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    background-color: black;
+    background-color: #bb0606;
     height: 100px;
     justify-content: center;
 }
