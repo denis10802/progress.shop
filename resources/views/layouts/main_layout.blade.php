@@ -38,24 +38,7 @@
 </head>
 
 <body class="template-color-1" >
-{{--<div class="footer-bottom section fb-60">--}}
-{{--    <div class="container">--}}
-{{--        <div class="row no-gutters st-border pt-35 pb-35 align-items-center justify-content-between">--}}
-{{--            <div class="col-lg-6 col-md-6">--}}
-{{--                <div class="copyright">--}}
-{{--                    <p>&copy;{{date('Y')}} <a href="{{route('home')}}">Прогресс</a>. Все права защищены.</p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-lg-6 col-md-6">--}}
-{{--                <div class="footer-social">--}}
-{{--                    <a href="index.html#"><i class="fab fa-vk"></i></a>--}}
-{{--                    <a href="index.html#"><i class="fab fa-telegram"></i></a>--}}
-{{--                    <a href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</div>--}}
+
 <div id="main-wrapper" >
 
 
@@ -360,7 +343,7 @@
     <!-- All jquery file included here -->
     {{--<script src="/users/js/jquery-3.5.0.min.js"></script>--}}
 <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
-{{--<script src="/users/js/jquery-migrate-3.1.0.min.js"></script>--}}
+<script src="/users/js/jquery-migrate-3.1.0.min.js"></script>
 <script src="/users/js/bootstrap.bundle.min.js"></script>
 
 
