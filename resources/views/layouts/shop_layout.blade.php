@@ -75,8 +75,12 @@
                                     <a href="tel:+79112923414">
                                         <i class="lnr lnr-phone-handset"></i>
                                         <span> +7 911 292-34-14</span>
-
                                     </a>
+                                </div>
+                                <div class="footer-social jp-author item">
+                                    <a href="index.html#"><i class="fab fa-vk"></i></a>
+                                    <a href="index.html#"><i class="fab fa-telegram"></i></a>
+                                    <a target="_blank" href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a>
                                 </div>
 
                             </div>
@@ -150,6 +154,15 @@
                     <li><a href="{{route('showDelivery')}}"><span>ДОСТАВКА И ОПЛАТА</span></a></li>
 
                     <li><a href="{{route('showContacts')}}"><span>КОНТАКТЫ</span></a></li>
+
+                    <li><a href="tel:+79112923414"><span> +7 911 292-34-14</span></a></li>
+
+                    <li><div class="footer-social">
+                            <a href="index.html#"><i class="fab fa-vk"></i></a>
+                            <a href="index.html#"><i class="fab fa-telegram"></i></a>
+                            <a target="_blank" href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -304,8 +317,12 @@
                         <button class="button popup-form__button">Узнать стоимость </button>
                         <span class="popup-form__descr" class="popup-form____descr">Или Вы можете перезвонить нам сами по
 						телефону:</span>
-                    </form>
                         <a href="tel:+79112923414" class="popup-form__tel">+7 911 292-34-14</a>
+                    </form>
+
+                    <a href="index.html#" class="modal-social-icon"><i class="fab fa-vk"></i></a>
+                    <a href="index.html#" class="modal-social-icon"><i class="fab fa-telegram"></i></a>
+                    <a target="_blank" href="https://wa.me/+79112923414" class="modal-social-icon"><i class="fab fa-whatsapp"></i></a>
 
                 </div>
 
@@ -315,7 +332,7 @@
 
     @if (session('success'))
 
-        <div class="popup_thanks active">
+        <div class="popup_thanks active_popup">
             <div class="thanks">
                 <a class="close-thanks"><img class="close-icons" src="/users//images/close-modal.png" alt=""></a> <!-- При клике происходит закрытие всплывающего окна -->
                 <div class="form-thanks">
@@ -353,7 +370,7 @@
 <script>
 
     $('.close-thanks').click(function () {
-        $('.popup_thanks').removeClass('active');
+        $('.popup_thanks').removeClass('active_popup');
 
     });
 </script>

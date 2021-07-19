@@ -38,8 +38,26 @@
 </head>
 
 <body class="template-color-1" >
-
+{{--<div class="footer-bottom section fb-60">--}}
+{{--    <div class="container">--}}
+{{--        <div class="row no-gutters st-border pt-35 pb-35 align-items-center justify-content-between">--}}
+{{--            <div class="col-lg-6 col-md-6">--}}
+{{--                <div class="copyright">--}}
+{{--                    <p>&copy;{{date('Y')}} <a href="{{route('home')}}">Прогресс</a>. Все права защищены.</p>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-lg-6 col-md-6">--}}
+{{--                <div class="footer-social">--}}
+{{--                    <a href="index.html#"><i class="fab fa-vk"></i></a>--}}
+{{--                    <a href="index.html#"><i class="fab fa-telegram"></i></a>--}}
+{{--                    <a href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
 <div id="main-wrapper" >
+
 
 
     <!--Header section start-->
@@ -86,243 +104,263 @@
                                     <a href="tel:+79112923414">
                                         <i class="lnr lnr-phone-handset"></i>
                                         <span> +7 911 292-34-14</span>
-
                                     </a>
                                 </div>
+                                <div class="footer-social jp-author item">
+                                    <a href="index.html#"><i class="fab fa-vk"></i></a>
+                                    <a href="index.html#"><i class="fab fa-telegram"></i></a>
+                                    <a target="_blank" href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+
 
 
                             </div>
                         </div>
                     </div>
-                    <!-- Cart & Search Area End -->
+                                                                <!-- Cart & Search Area End -->
                 </div>
 
             </div>
         </div>
 
     </header>
-    <!--Header section end-->
+                                                <!--Header section end-->
 
-    <!--Header Mobile section start-->
-    <header class="header-mobile bg_color--2 d-block d-lg-none">
-        <div class="header-bottom menu-right">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="header-mobile-navigation d-block d-lg-none">
-                            <div class="row align-items-center">
-                                <div class="col-3 col-md-3">
-                                    <div class="mobile-navigation text-right">
-                                        <div class="header-icon-wrapper">
-                                            <ul class="icon-list justify-content-start">
-                                                <li class="popup-mobile-click">
-                                                    <a href="javascript:void(0)"><i class="lnr lnr-menu"></i></a>
-                                                </li>
-                                            </ul>
+        <!--Header Mobile section start-->
+        <header class="header-mobile bg_color--2 d-block d-lg-none">
+            <div class="header-bottom menu-right">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="header-mobile-navigation d-block d-lg-none">
+                                <div class="row align-items-center">
+                                    <div class="col-3 col-md-3">
+                                        <div class="mobile-navigation text-right">
+                                            <div class="header-icon-wrapper">
+                                                <ul class="icon-list justify-content-start">
+                                                    <li class="popup-mobile-click">
+                                                        <a href="javascript:void(0)"><i class="lnr lnr-menu"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 col-md-6">
-                                    <div class="header-logo text-center">
-                                        <a href="{{route('home')}}">
-                                            <img src="/users/images/logo-mobile.png" class="img-fluid" alt="">
-                                        </a>
+                                    <div class="col-6 col-md-6">
+                                        <div class="header-logo text-center">
+                                            <a href="{{route('home')}}">
+                                                <img src="/users/images/logo-mobile.png" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
                                     </div>
+
                                 </div>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </header>
+        <!--Header Mobile section end-->
+
+        <!-- Start Popup Menu -->
+        <div class="popup-mobile-manu popup-mobile-visiable">
+            <div class="inner">
+                <div class="mobileheader">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="/users/images/logo-mobile.png" alt="Multipurpose">
+                        </a>
+                    </div>
+                    <a class="mobile-close" href="#"></a>
+                </div>
+                <div class="menu-content">
+                    <ul class="menulist object-custom-menu">
+                        <li><a href="{{route('home')}}"><span>ГЛАВНАЯ</span></a>
+                        </li>
+
+                        <li><a href="{{route('catalog')}}"><span>КАТАЛОГ</span></a></li>
+
+                        <li><a href="{{route('showAbout')}}"><span>О КОМПАНИИ</span></a></li>
+
+                        <li><a href="{{route('showDelivery')}}"><span>ДОСТАВКА И ОПЛАТА</span></a></li>
+
+                        <li><a href="{{route('showContacts')}}"><span>КОНТАКТЫ</span></a></li>
+
+                        <li><a href="tel:+79112923414"><span> +7 911 292-34-14</span></a></li>
+
+                        <li><div class="footer-social">
+                                <a href="index.html#"><i class="fab fa-vk"></i></a>
+                                <a href="index.html#"><i class="fab fa-telegram"></i></a>
+                                <a target="_blank" href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Popup Menu -->
+
+
+
+        @yield('content')
+
+
+
+        <!--Footer section start-->
+        <footer class="footer-section section">
+
+            <!-- Footer Top Section Start -->
+            <div class="footer-top-section section pt-115 pt-lg-95 pt-md-75 pt-sm-55 pt-xs-45 pb-90 pb-lg-70 pb-md-40 pb-sm-20 pb-xs-15">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xl-5 col-lg-3 col-md-6">
+                            <!-- Footer Widget Start -->
+                            <div class="footer-widget mb-30">
+                                <h6 class="title">Наши контакты</h6>
+                                <div class="address">
+                                    <i class="lnr lnr-map-marker"></i>
+                                    <span>Юридический адрес 195220, город Санкт- Петербург, Кушелевская дорога, дом 7 корпус 4 литер А, квартира 574
+
+    </span>
+                                </div>
+                                <div class="address">
+                                    <i class="lnr lnr-apartment"></i>
+                                    <span>Общество с ограниченной ответственностью «Прогресс»
+
+    </span>
+                                </div>
+                                <div class="email">
+                                    <i class="lnr lnr-envelope"></i>
+                                    <span>zakaz@progressshop.ru</span>
+                                </div>
+                                <div class="phone theme-color"><i class="lnr lnr-phone-handset"></i> +7 (911) 292-34-14 </div>
+
+                            </div>
+                            <!-- Footer Widget End -->
+                        </div>
+
+                        <div class="col-xl-4 col-lg-2 col-md-6">
+                            <!-- Footer Widget Start -->
+                            <div class="footer-widget mb-30">
+                                <h6 class="title">Интернет-магазин Прогресс</h6>
+                                <div class="footer-widget-link">
+                                    <ul>
+                                        <li><a href="{{route('showContacts')}}">Контакты</a></li>
+                                        <li><a href="{{route('showAbout')}}">O компании</a></li>
+                                        <li><a href="{{route('showDelivery')}}">Доставка и оплата</a></li>
+                                        <li><a href="#">Политика конфиденциальности</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Footer Widget End -->
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <!-- Footer Widget Start -->
+                            <div class="footer-widget mb-30">
+                                <h6 class="title">Магазин</h6>
+                                <div class="footer-widget-link">
+                                    <ul>
+                                        <li><a href="{{route('catalog')}}">Все товары</a></li>
+                                        <li><a href="{{route('catalog')}}">Все категории</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Footer Widget End -->
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Top Section End -->
+
+            <!--Footer bottom start-->
+            <div class="footer-bottom section fb-60">
+                <div class="container">
+                    <div class="row no-gutters st-border pt-35 pb-35 align-items-center justify-content-between">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="copyright">
+                                <p>&copy;{{date('Y')}} <a href="{{route('home')}}">Прогресс</a>. Все права защищены.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="footer-social">
+                                <a href="index.html#"><i class="fab fa-vk"></i></a>
+                                <a href="index.html#"><i class="fab fa-telegram"></i></a>
+                                <a href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div>
-    </header>
-    <!--Header Mobile section end-->
+            <!--Footer bottom end-->
 
-    <!-- Start Popup Menu -->
-    <div class="popup-mobile-manu popup-mobile-visiable">
-        <div class="inner">
-            <div class="mobileheader">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="/users/images/logo-mobile.png" alt="Multipurpose">
-                    </a>
+        </footer>
+        <!--Footer section end-->
+
+        <!--modal-->
+        <div class="popup" id="popup_1" >
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a class="popup__close close-popup">X</a>
+
+                    <div class="popup-form form-popup">
+                        <h2 class="popup-form__title">Узнайте точную стоимость <br>наших услуг по телефону!</h2>
+                        <span class="popup-form__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+                        <form action="{{route('sendForm')}}"  method="post">
+                            @csrf
+                            <input type="text" name="name" class="popup-form__input form-popup__name "
+                                   placeholder="Ваше имя" required>
+                            <input type="tel" name="telephone" class="telephone popup-form__input form-popup__phone"
+                                   placeholder="Ваш телефон" required>
+                            <button type="submit" class="button popup-form__button">Узнать стоимость </button>
+                            <span class="popup-form__descr" class="popup-form____descr">Или Вы можете перезвонить нам сами по
+                            телефону:</span>
+                            <a href="tel:+79112923414" class="popup-form__tel">+7 911 292-34-14</a>
+                        </form>
+
+                            <a href="index.html#" class="modal-social-icon"><i class="fab fa-vk"></i></a>
+                            <a href="index.html#" class="modal-social-icon"><i class="fab fa-telegram"></i></a>
+                            <a target="_blank" href="https://wa.me/+79112923414" class="modal-social-icon"><i class="fab fa-whatsapp"></i></a>
+
+                    </div>
+
                 </div>
-                <a class="mobile-close" href="#"></a>
-            </div>
-            <div class="menu-content">
-                <ul class="menulist object-custom-menu">
-                    <li><a href="{{route('home')}}"><span>ГЛАВНАЯ</span></a>
-                    </li>
-
-                    <li><a href="{{route('catalog')}}"><span>КАТАЛОГ</span></a></li>
-
-                    <li><a href="{{route('showAbout')}}"><span>О КОМПАНИИ</span></a></li>
-
-                    <li><a href="{{route('showDelivery')}}"><span>ДОСТАВКА И ОПЛАТА</span></a></li>
-
-                    <li><a href="{{route('showContacts')}}"><span>КОНТАКТЫ</span></a></li>
-                </ul>
             </div>
         </div>
+
+            @if (session('success'))
+
+        <div class="popup_thanks active_popup">
+            <div class="thanks">
+                <a class="close-thanks"><img class="close-icons" src="/users//images/close-modal.png" alt=""></a> <!-- При клике происходит закрытие всплывающего окна -->
+                <div class="form-thanks">
+                    <div id="form_response" class="text-center">
+                        <h1 class="popup_thanks__title">Спасибо за заявку!!!</h1>
+                        <p class="popup_thanks__subtitle">{{session('success')}}</p>
+                        <p class="popup_thanks__subtitle">В ближайшее время с Вами свяжется наш специалист.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="overlay-form"></div> <!-- Затемнение фона. При клике закрываем всплывающее окно -->
+        </div>
+
+            @endif
 
     </div>
-    <!-- End Popup Menu -->
 
+    <!-- Placed js at the end of the document so the pages load faster -->
 
-
-    @yield('content')
-
-
-
-    <!--Footer section start-->
-    <footer class="footer-section section">
-
-        <!-- Footer Top Section Start -->
-        <div class="footer-top-section section pt-115 pt-lg-95 pt-md-75 pt-sm-55 pt-xs-45 pb-90 pb-lg-70 pb-md-40 pb-sm-20 pb-xs-15">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-xl-5 col-lg-3 col-md-6">
-                        <!-- Footer Widget Start -->
-                        <div class="footer-widget mb-30">
-                            <h6 class="title">Наши контакты</h6>
-                            <div class="address">
-                                <i class="lnr lnr-map-marker"></i>
-                                <span>Юридический адрес 195220, город Санкт- Петербург, Кушелевская дорога, дом 7 корпус 4 литер А, квартира 574
-
-</span>
-                            </div>
-                            <div class="address">
-                                <i class="lnr lnr-apartment"></i>
-                                <span>Общество с ограниченной ответственностью «Прогресс»
-
-</span>
-                            </div>
-                            <div class="email">
-                                <i class="lnr lnr-envelope"></i>
-                                <span>zakaz@progressshop.ru</span>
-                            </div>
-                            <div class="phone theme-color"><i class="lnr lnr-phone-handset"></i> +7 (911) 292-34-14 </div>
-                        </div>
-                        <!-- Footer Widget End -->
-                    </div>
-
-                    <div class="col-xl-4 col-lg-2 col-md-6">
-                        <!-- Footer Widget Start -->
-                        <div class="footer-widget mb-30">
-                            <h6 class="title">Интернет-магазин Прогресс</h6>
-                            <div class="footer-widget-link">
-                                <ul>
-                                    <li><a href="{{route('showContacts')}}">Контакты</a></li>
-                                    <li><a href="{{route('showAbout')}}">O компании</a></li>
-                                    <li><a href="{{route('showDelivery')}}">Доставка и оплата</a></li>
-                                    <li><a href="#">Политика конфиденциальности</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Footer Widget End -->
-                    </div>
-
-                    <div class="col-xl-3 col-lg-3 col-md-6">
-                        <!-- Footer Widget Start -->
-                        <div class="footer-widget mb-30">
-                            <h6 class="title">Магазин</h6>
-                            <div class="footer-widget-link">
-                                <ul>
-                                    <li><a href="{{route('catalog')}}">Все товары</a></li>
-                                    <li><a href="{{route('catalog')}}">Все категории</a></li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Footer Widget End -->
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-        <!-- Footer Top Section End -->
-
-        <!--Footer bottom start-->
-        <div class="footer-bottom section fb-60">
-            <div class="container">
-                <div class="row no-gutters st-border pt-35 pb-35 align-items-center justify-content-between">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="copyright">
-                            <p>&copy;{{date('Y')}} <a href="{{route('home')}}">Прогресс</a>. Все права защищены.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer-social">
-                            <a href="index.html#"><i class="fab fa-vk"></i></a>
-                            <a href="index.html#"><i class="fab fa-telegram"></i></a>
-                            <a href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Footer bottom end-->
-
-    </footer>
-    <!--Footer section end-->
-
-    <!--modal-->
-    <div class="popup" id="popup_1" >
-        <div class="popup__body">
-            <div class="popup__content">
-                <a class="popup__close close-popup">X</a>
-
-                <div class="popup-form form-popup">
-                    <h2 class="popup-form__title">Узнайте точную стоимость <br>наших услуг по телефону!</h2>
-                    <span class="popup-form__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
-                    <form action="{{route('sendForm')}}"  method="post">
-                        @csrf
-                        <input type="text" name="name" class="popup-form__input form-popup__name "
-                               placeholder="Ваше имя" required>
-                        <input type="tel" name="telephone" class="telephone popup-form__input form-popup__phone"
-                               placeholder="Ваш телефон" required>
-                        <button type="submit" class="button popup-form__button">Узнать стоимость </button>
-                        <span class="popup-form__descr" class="popup-form____descr">Или Вы можете перезвонить нам сами по
-						телефону:</span>
-                        <a href="tel:+79112923414" class="popup-form__tel">+7 911 292-34-14</a>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-        @if (session('success'))
-
-    <div class="popup_thanks active">
-        <div class="thanks">
-            <a class="close-thanks"><img class="close-icons" src="/users//images/close-modal.png" alt=""></a> <!-- При клике происходит закрытие всплывающего окна -->
-            <div class="form-thanks">
-                <div id="form_response" class="text-center">
-                    <h1 class="popup_thanks__title">Спасибо за заявку!!!</h1>
-                    <p class="popup_thanks__subtitle">{{session('success')}}</p>
-                    <p class="popup_thanks__subtitle">В ближайшее время с Вами свяжется наш специалист.</p>
-                </div>
-            </div>
-
-        </div>
-        <div class="overlay-form"></div> <!-- Затемнение фона. При клике закрываем всплывающее окно -->
-    </div>
-
-        @endif
-
-</div>
-
-<!-- Placed js at the end of the document so the pages load faster -->
-
-<!-- All jquery file included here -->
-{{--<script src="/users/js/jquery-3.5.0.min.js"></script>--}}
+    <!-- All jquery file included here -->
+    {{--<script src="/users/js/jquery-3.5.0.min.js"></script>--}}
 <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
-<script src="/users/js/jquery-migrate-3.1.0.min.js"></script>
+{{--<script src="/users/js/jquery-migrate-3.1.0.min.js"></script>--}}
 <script src="/users/js/bootstrap.bundle.min.js"></script>
 
 

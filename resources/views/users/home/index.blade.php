@@ -149,7 +149,7 @@
 
                                                             <div class="title-name">
                                                                 <h3 class="job-title">
-                                                                    <a href="job-details.html">{{$product->title}}</a>
+                                                                    <a href="{{route('showProduct', [$product->category->slug, $product->id])}}">{{$product->title}}</a>
                                                                 </h3>
                                                                 <div class="employer-name">
                                                                     <a href="{{route('showProduct', [$product->category->slug, $product->id])}}">{{$product->category->title}}</a>

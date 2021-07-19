@@ -191,7 +191,7 @@
     opacity: 0; /* Делаем блок невидимым */
 }
 
-.active {
+.active_popup {
     display: flex;
     opacity: 1;
     transition: opacity 1s;

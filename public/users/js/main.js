@@ -845,7 +845,7 @@ $.scrollUp({
 // }
 
     $('.close-thanks').click(function () {
-        $('.popup_thanks').removeClass('active');
+        $('.popup_thanks').removeClass('active_popup');
 
     });
 
