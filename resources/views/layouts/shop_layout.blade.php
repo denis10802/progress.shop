@@ -18,6 +18,17 @@
     <!-- <link rel="stylesheet" href="assets/css/plugins/plugins.css"> -->
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
 
+
+    {{--    favicon --}}
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/users/images/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/users/images/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/users/images/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/users/images/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="/users/images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Use the minified version files listed below for better performance and remove the files listed above -->
     <link rel="stylesheet" href="/users/css/plugins/plugins.min.css">
     <link rel="stylesheet" href="/users/css/style.min.css">
@@ -305,7 +316,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="footer-social">
-                            <a href="index.html#"><i class="fab fa-telegram"></i></a>
+                            <a href="https://teleg.run/progressshop"><i class="fab fa-telegram"></i></a>
                             <a href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>

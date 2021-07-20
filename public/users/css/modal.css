@@ -84,7 +84,7 @@
 }
 
 .popup-form {
-    padding: 30px;
+    padding: 20px;
     background-color:#f57b1b;
     text-align: center;
 }
@@ -148,11 +148,11 @@
     border-color: #444;
 }
 
-.form-popup {
-    padding-left: 80px;
-    padding-right: 80px;
+/*.form-popup {*/
+/*    padding-left: 80px;*/
+/*    padding-right: 80px;*/
 
-}
+/*}*/
 
 .form-popup__name {
     margin-top: 40px;

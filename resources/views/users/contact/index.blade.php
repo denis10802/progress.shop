@@ -43,7 +43,7 @@
                             </div>
                             <div class="info">
                                 <span class="title">Телефон:</span>
-                                <span class="text phone">+7 911 292-34-14</span>
+                                <span class="text phone"><a href="tel:+79112923414">+7 911 292-34-14</a></span>
                             </div>
                             <div class="info">
                                 <span class="title">Email:</span>
@@ -60,7 +60,7 @@
                             <div class="info">
                                 <span class="title">Подписывайтесь на нас:</span>
                                 <ul class="social-icon">
-                                    <li><a class="facebook" href="contact.html#"><i class="fab fa-telegram-plane"></i></a></li>
+                                    <li><a class="facebook" href="https://teleg.run/progressshop"><i class="fab fa-telegram-plane"></i></a></li>
                                     <li><a class="twitter" target="_blank" href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a></li>
 
                                 </ul>
