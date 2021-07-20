@@ -34,7 +34,9 @@
     <!-- Modernizr JS -->
     <script src="/users/js/vendor/modernizr-3.10.0.min.js"></script>
 {{--    <script src="//code-ya.jivosite.com/widget/9VeYpxMVho" async></script>--}}
-    <script async src="//unisiter.ru/widgets/whatsapp/script.js" uw-phone="79112923414" uw-location="bl"></script>
+
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-cc179aff-0709-427f-b612-e3e9ede78915"></div>
 
 </head>
 
