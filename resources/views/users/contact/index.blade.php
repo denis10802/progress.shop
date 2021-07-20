@@ -62,8 +62,7 @@
                                 <ul class="social-icon">
                                     <li><a class="facebook" href="contact.html#"><i class="fab fa-telegram-plane"></i></a></li>
                                     <li><a class="twitter" target="_blank" href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a></li>
-                                    <li><a class="linkedin" href="contact.html#"><i class="fab fa-vk"></i></a></li>
-                                    <li><a class="youtube" href="contact.html#"><i class="fab fa-youtube"></i></a></li>
+
                                 </ul>
                             </div>
                         </div>

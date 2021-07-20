@@ -430,7 +430,7 @@ img {
   line-height: 64px;
   border-radius: 100%;
     bottom: 21px;
-    right: 20px;
+    left: 20px;
   color: #fff;
   text-align: center;
   font-size: 25px;
@@ -3305,6 +3305,13 @@ body.template-color-4 {
         line-height: 24px;
         font-weight: 600;
         color: #ff2626;
+        margin-bottom: 7px;
+        display: block; }
+        .single-job .job-info .job-info-inner .job-salary-black {
+        font-size: 17px;
+        line-height: 24px;
+        font-weight: 600;
+        color: #000;
         margin-bottom: 7px;
         display: block; }
       .single-job .job-info .job-info-inner .job-meta {
@@ -9571,3 +9578,20 @@ body.template-color-4 {
 .modal-social-icon{
     font-size: 28px;
 }
+.header-social .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.header-social .info .social-icon{
+    display: flex;
+    flex-direction: column;
+}
+.header-social .info .social-icon li a{
+    margin-bottom: 5px;
+}
+.menu-content .menulist li .info{
+    padding-top: 10px
+}
+
+

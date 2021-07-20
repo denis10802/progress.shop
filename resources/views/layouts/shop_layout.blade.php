@@ -65,7 +65,14 @@
 
                     <!-- Cart & Search Area Start -->
                     <div class="col-xl-3 col-lg-3 col-12">
-                        <div class="header-btn-action d-flex justify-content-end">
+                        <div class="header-btn-action d-flex justify-content-end header-social">
+                            <div class="info ">
+                                <ul class="social-icon">
+                                    <li><a class="facebook" href="https://teleg.run/progressshop"><i class="fab fa-telegram-plane"></i></a></li>
+                                    <li><a class="twitter" target="_blank" href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a></li>
+
+                                </ul>
+                            </div>
                             <div class="btn-action-wrap display-flex">
                                 <div class="jp-author item">
                                     <a  name="#popup_1" class="popup-link">
@@ -79,10 +86,11 @@
                                         <span> +7 911 292-34-14</span>
                                     </a>
                                 </div>
-                                <div class="footer-social jp-author item">
-                                    <a href="index.html#"><i class="fab fa-vk"></i></a>
-                                    <a href="index.html#"><i class="fab fa-telegram"></i></a>
-                                    <a target="_blank" href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a>
+                                <div class="jp-author item">
+                                    <a href="mailto:zakaz@progressshop.ru">
+                                        <i class="lnr lnr-envelope"></i>
+                                        <span>zakaz@progressshop.ru</span>
+                                    </a>
                                 </div>
 
                             </div>
@@ -138,11 +146,11 @@
         <div class="inner">
             <div class="mobileheader">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="{{route('home')}}">
                         <img src="/users/images/logo-mobile.png" alt="Multipurpose">
                     </a>
                 </div>
-                <a class="mobile-close" href="index.html#"></a>
+                <a class="mobile-close" href="#"></a>
             </div>
             <div class="menu-content">
                 <ul class="menulist object-custom-menu">
@@ -159,10 +167,19 @@
 
                     <li><a href="tel:+79112923414"><span> +7 911 292-34-14</span></a></li>
 
-                    <li><div class="footer-social">
-                            <a href="index.html#"><i class="fab fa-vk"></i></a>
-                            <a href="index.html#"><i class="fab fa-telegram"></i></a>
-                            <a target="_blank" href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a>
+                    <li><a href="mailto:zakaz@progressshop.ru">
+                            <i class="lnr lnr-envelope"></i>
+                            <span>zakaz@progressshop.ru</span>
+                        </a></li>
+
+
+                    <li>
+                        <div class="info ">
+                            <ul class="social-icon">
+                                <li><a class="facebook" href="https://teleg.run/progressshop"><i class="fab fa-telegram-plane"></i></a></li>
+                                <li><a class="twitter" target="_blank" href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a></li>
+
+                            </ul>
                         </div>
                     </li>
                 </ul>
@@ -288,7 +305,6 @@
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="footer-social">
-                            <a href="index.html#"><i class="fab fa-vk"></i></a>
                             <a href="index.html#"><i class="fab fa-telegram"></i></a>
                             <a href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a>
                         </div>
@@ -322,9 +338,14 @@
                         <a href="tel:+79112923414" class="popup-form__tel">+7 911 292-34-14</a>
                     </form>
 
-                    <a href="index.html#" class="modal-social-icon"><i class="fab fa-vk"></i></a>
-                    <a href="index.html#" class="modal-social-icon"><i class="fab fa-telegram"></i></a>
-                    <a target="_blank" href="https://wa.me/+79112923414" class="modal-social-icon"><i class="fab fa-whatsapp"></i></a>
+
+                    <div class="info ">
+                        <ul class="social-icon">
+                            <li><a class="facebook" href="https://teleg.run/progressshop"><i class="fab fa-telegram-plane"></i></a></li>
+                            <li><a class="twitter" target="_blank" href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a></li>
+
+                        </ul>
+                    </div>
 
                 </div>
 

@@ -157,7 +157,7 @@
                                                             </div>
                                                         </div>
                                                         <p class="job-salary"> <em>оптом - </em>{{$product->wholesale}} <i class="fas fa-ruble-sign"></i>  </p>
-                                                        <p class="job-salary"> <em> в розницу - </em>{{$product->retail}} <i class="fas fa-ruble-sign"></i></p>
+                                                        <p class="job-salary-black"> <em> в розницу - </em>{{$product->retail}} <i class="fas fa-ruble-sign"></i></p>
 
                                                     </div>
                                                 </div>
