@@ -49,7 +49,20 @@
     </div>
     <!-- About Content Section End -->
 
+    <div class="funfact-section section pt-110 pt-lg-90 pt-md-70 pt-sm-50 pt-xs-40 pb-85 pb-lg-65 pb-md-45 pb-sm-25 pb-xs-15">
+        <div class="container">
 
+
+                <div class="sertificate">
+                    <img src="/users/images/sertificate.jpg" alt="">
+                </div>
+
+
+
+
+
+        </div>
+    </div>
 
     <!-- Personal Skill Section Start -->
     <div class="personal-skill-section section bg-image-proparty bg_image--2 pt-120 pt-lg-100 pt-md-80 pt-sm-60 pt-xs-50 pb-120 pb-lg-100 pb-md-80 pb-sm-60 pb-xs-50">

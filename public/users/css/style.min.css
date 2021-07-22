@@ -9595,3 +9595,19 @@ body.template-color-4 {
 }
 
 
+.number_for__mob_vers{
+    display: none;
+}
+
+@media only screen and (max-width: 767px){
+    .number_for__mob_vers{
+        display: block;
+    }
+}
+
+ .sertificate{
+    display: flex;
+    justify-content: space-around;
+}
+
+

@@ -239,7 +239,10 @@
                                     <i class="lnr lnr-envelope"></i>
                                     <span>zakaz@progressshop.ru</span>
                                 </div>
-                                <div class="phone theme-color"><i class="lnr lnr-phone-handset"></i> +7 (911) 292-34-14 </div>
+                                <div class="phone theme-color">
+                                    <i class="lnr lnr-phone-handset"></i>
+                                    <a href="tel:+79112923414">+7 911 292-34-14</a>
+                                </div>
 
                             </div>
                             <!-- Footer Widget End -->

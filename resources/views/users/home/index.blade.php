@@ -13,6 +13,7 @@
                     <div class="col-lg-12">
                         <!--Hero Content start-->
                         <div class="hero-content-4 center">
+                            <p class="number_for__mob_vers"><a href="tel:+79112923414">+7 911 292-34-14</a></p>
                             <h2 class="title">БЕСПЕРЕБОЙНЫЕ ПОСТАВКИ</h2>
                             <h3 class="sub-title">CТРОИТЕЛЬНЫХ МАТЕРИАЛОВ</h3>
                             <p>ДЛЯ СТРОИТЕЛЬСТВА И РЕМОНТА </p>
