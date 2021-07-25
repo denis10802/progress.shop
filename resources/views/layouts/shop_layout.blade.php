@@ -260,8 +260,12 @@
 </span>
                             </div>
                             <div class="email">
-                                <i class="lnr lnr-envelope"></i>
-                                <span>zakaz@progressshop.ru</span>
+                                <a href="mailto:zakaz@progressshop.ru">
+                                    <i class="lnr lnr-envelope"></i>
+                                    <span>zakaz@progressshop.ru</span>
+                                </a>
+
+
                             </div>
                             <div class="phone theme-color">
                                 <i class="lnr lnr-phone-handset"></i>
