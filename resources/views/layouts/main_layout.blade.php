@@ -66,8 +66,8 @@
                             <ul>
                                 <li><a href="{{route('home')}}">ГЛАВНАЯ</a></li>
                                 <li><a href="{{route('catalog')}}">КАТАЛОГ</a></li>
-                                <li><a href="{{route('showAbout')}}">О КОМПАНИИ</a></li>
                                 <li><a href="{{route('showDelivery')}}">ДОСТАВКА И ОПЛАТА</a></li>
+                                <li><a href="{{route('showAbout')}}">О КОМПАНИИ</a></li>
                                 <li><a href="{{route('showContacts')}}">КОНТАКТЫ</a></li>
 
 
