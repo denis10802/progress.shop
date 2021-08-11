@@ -47,7 +47,7 @@
                             </div>
                             <div class="info">
                                 <span class="title">Email:</span>
-                                <span class="text">zakaz@progressshop.ru</span>
+                                <span class="text"><a href="mailto:zakaz@progressshop.ru">zakaz@progressshop.ru</a></span>
                             </div>
                             <div class="info">
                                 <span class="title">ОГРН:</span>
