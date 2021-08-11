@@ -206,7 +206,9 @@
     <div class="shop-section section bg_color--5 pb-120 pb-lg-100 pb-md-80 pb-sm-60 pb-xs-50">
         <div class="container faq-wrapper">
             <div class="row">
-                <div class="col-lg-4 col-12 order-lg-1 order-1">
+                @yield('content')
+
+                <div class="col-lg-4 col-12 order-lg-1 order-2">
                     <div class="sidebar-wrapper-shop mt-sm-40 mt-xs-30">
                         <div class="common-sidebar-widget sidebar-four">
                             <h2 class="sidebar-title">Категории</h2>
@@ -226,7 +228,7 @@
                     </div>
                 </div>
 
-               @yield('content')
+
 
             </div>
         </div>

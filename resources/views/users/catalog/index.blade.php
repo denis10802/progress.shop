@@ -30,7 +30,7 @@
 @section('content')
 
 
-    <div class="col-lg-8 col-12 order-lg-2 order-2">
+    <div class="col-lg-8 col-12 order-lg-2 order-1">
         <div class="row">
 
             <div class="col-lg-12">
@@ -55,6 +55,11 @@
                                             <span class="old">{{$product->wholesale}} <i class="fas fa-ruble-sign"></i></span>
 
                                         </h4>
+                                        <div class="all-link-button text-center mt-10">
+
+                                            <a href="{{route('showProduct', [$product->category->slug, $product->id])}}" class="ht-btn lg-btn">Подробнее</a>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
