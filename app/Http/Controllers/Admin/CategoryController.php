@@ -43,6 +43,9 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'title'=>'required|max:255'
+        ]);
         $category = new Category();
         $category->title = $request->title;
         $category->slug = Str::of($request->title)->slug('-');

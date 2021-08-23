@@ -35,11 +35,20 @@
                         <div class="form-group">
                             @csrf
                             <label for="exampleInputEmail1">Название</label>
-                            <input type="text" name="title" class="form-control" id="exampleInputEmail1" placeholder="Введите название категории" required>
+                            <input type="text" name="title" class="form-control" id="exampleInputEmail1" placeholder="Введите название категории" >
                         </div>
 
                     </div>
                     <!-- /.card-body -->
+                    @if($errors->any())
+                        <div class="alert alert-danger alert-dismissible">
+                            <ul>
+                                @foreach($errors->all() as $error)
+                                    <li> {{$error}} </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
 
                     <div class="card-footer">
                         <button type="submit" class="btn btn-primary">Добавить</button>

@@ -24,6 +24,7 @@
     <link rel="mask-icon" href="/users/images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <meta name="yandex-verification" content="c8e661459c678858" />
 
 {{--     <link rel="stylesheet" href="/users/css/plugins/plugins.css">--}}
 {{--    <link rel="stylesheet" href="/users/css/style.css">--}}
@@ -33,7 +34,7 @@
     <link rel="stylesheet" href="/users/css/style.min.css">
     <!-- Modernizr JS -->
     <script src="/users/js/vendor/modernizr-3.10.0.min.js"></script>
-{{--    <script src="//code-ya.jivosite.com/widget/9VeYpxMVho" async></script>--}}
+    <script src="//code-ya.jivosite.com/widget/9VeYpxMVho" async></script>
 
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <div class="elfsight-app-cc179aff-0709-427f-b612-e3e9ede78915"></div>
