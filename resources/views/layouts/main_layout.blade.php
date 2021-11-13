@@ -26,8 +26,8 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="yandex-verification" content="c8e661459c678858" />
 
-{{--     <link rel="stylesheet" href="/users/css/plugins/plugins.css">--}}
-{{--    <link rel="stylesheet" href="/users/css/style.css">--}}
+{{--     <link rel="stylesheet" href="/site/css/plugins/plugins.css">--}}
+{{--    <link rel="stylesheet" href="/site/css/style.css">--}}
 
     <!-- Use the minified version files listed below for better performance and remove the files listed above -->
     <link rel="stylesheet" href="/users/css/plugins/plugins.min.css">
@@ -348,7 +348,7 @@
     <!-- Placed js at the end of the document so the pages load faster -->
 
     <!-- All jquery file included here -->
-    {{--<script src="/users/js/jquery-3.5.0.min.js"></script>--}}
+    {{--<script src="/site/js/jquery-3.5.0.min.js"></script>--}}
 <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
 <script src="/users/js/jquery-migrate-3.1.0.min.js"></script>
 <script src="/users/js/bootstrap.bundle.min.js"></script>

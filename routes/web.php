@@ -4,6 +4,9 @@
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\SpecificationsController;
+use App\Http\Controllers\MailSetting;
+use App\Http\Controllers\Site\CatalogController;
+use App\Http\Controllers\Site\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,70 +20,51 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//users
+//site
 
-Route::get('/',[App\Http\Controllers\Users\HomeController::class,'index'])->name('home');
+Route::get('/',[HomeController::class,'index'])->name('home');
 
-Route::get('/catalog',[\App\Http\Controllers\Users\CatalogController::class,'index'])->name('catalog');
+Route::get('/catalog',[CatalogController::class,'index'])->name('catalog');
 
-Route::get('/catalog/{cat}',[\App\Http\Controllers\Users\CatalogController::class,'showCategory'])->name('showCategory');
+Route::get('/catalog/{cat}',[CatalogController::class,'showCategory'])->name('showCategory');
 
-Route::get('/catalog/{cat}/{id}',[\App\Http\Controllers\Users\CatalogController::class,'showProduct'])->name('showProduct');
+Route::get('/catalog/{cat}/{id}',[CatalogController::class,'showProduct'])->name('showProduct');
 
-Route::get('/contact',[\App\Http\Controllers\Users\HomeController::class,'showContacts'])->name('showContacts');
+Route::get('/contact',[HomeController::class,'showContacts'])->name('showContacts');
 
-Route::get('/about',[\App\Http\Controllers\Users\HomeController::class,'showAbout'])->name('showAbout');
+Route::get('/about',[HomeController::class,'showAbout'])->name('showAbout');
 
-Route::get('/shipping-and-payment',[\App\Http\Controllers\Users\HomeController::class,'showDelivery'])->name('showDelivery');
+Route::get('/shipping-and-payment',[HomeController::class,'showDelivery'])->name('showDelivery');
 
-Route::post('/send-mail',[\App\Http\Controllers\MailSetting::class,'sendForm' ])->name('sendForm');
-
-
-
-
-
-
-
-
-
+Route::post('/send-mail',[MailSetting::class,'sendForm' ])->name('sendForm');
 
 Auth::routes();
-
-Route::get('/admin_panel_88', [App\Http\Controllers\HomeController::class, 'index'])->name('admin_panel_88');
-
-
 //admin
+Route::get('/admin_panel_88', [App\Http\Controllers\HomeController::class, 'index'])->name('admin_panel_88');
 
 Route::middleware(['role:admin'])->prefix('admin_panel')->group(function ()
 {
-
     Route::get('/',[App\Http\Controllers\Admin\HomeController::class, 'index'])->name('homeAdmin');
 
     Route::resource('category',CategoryController::class);
 
     Route::resource('product',ProductController::class);
 
-
 //   set images
 
     Route::prefix('set-image-category')->group(function (){
-
         Route::get('/{id}',[\App\Http\Controllers\Admin\ImageCategoryController::class,'SettingImageCategory'])->name('SettingImageCategory');
 
         Route::post('/{id}/update',[\App\Http\Controllers\Admin\ImageCategoryController::class,'updateImageCategory'])->name('updateImageCategory');
-
     });
 
     Route::prefix('set-image-product')->group(function (){
-
         Route::get('/{id}',[\App\Http\Controllers\Admin\ImageProductController::class,'showSettingImage'])->name('SettingImageProduct');
 
         Route::post('/{id}/update',[\App\Http\Controllers\Admin\ImageProductController::class,'updateImageProduct'])->name('updateImageProduct');
     });
 
 // end set images
-
-
 
 //specification
 
@@ -102,8 +86,6 @@ Route::prefix('specification')->group(function (){
 
 // end specification
 
-
-
     //description
     Route::prefix('description')->group(function (){
 
@@ -118,14 +100,8 @@ Route::prefix('specification')->group(function (){
         Route::post('/update/{id}',[App\Http\Controllers\Admin\DescriptionsController::class, 'update'])->name('update');
 
         Route::get('/delete/{id}/',[\App\Http\Controllers\Admin\DescriptionsController::class,'delete'])->name('delete');
-
-
     });
-
 //end description
-
-
-
 });
 
 

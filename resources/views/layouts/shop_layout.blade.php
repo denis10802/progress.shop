@@ -398,7 +398,7 @@
 <!-- Placed js at the end of the document so the pages load faster -->
 
 <!-- All jquery file included here -->
-{{--<script src="/users/js/vendor/jquery-3.5.0.min.js"></script>--}}
+{{--<script src="/site/js/vendor/jquery-3.5.0.min.js"></script>--}}
 <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
 <script src="/users/js/vendor/jquery-migrate-3.1.0.min.js"></script>
 <script src="/users/js/vendor/bootstrap.bundle.min.js"></script>

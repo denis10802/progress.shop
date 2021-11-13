@@ -35,12 +35,6 @@
 <body class="hold-transition sidebar-mini layout-fixed">
 
 <div class="wrapper">
-
-
-
-
-
-
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
@@ -48,7 +42,6 @@
             <img src="/admin/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
             <span class="brand-text font-weight-light">Админ - Панель</span>
         </a>
-
         <!-- Sidebar -->
         <div class="sidebar">
             <!-- Sidebar user panel (optional) -->
@@ -60,8 +53,6 @@
                     <a href="#" class="d-block">{{Auth::user()->name}}</a>
                 </div>
             </div>
-
-
             <!-- Sidebar Menu -->
             <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -72,7 +63,6 @@
                             <i class="nav-icon fas fa-tachometer-alt"></i>
                             <p>
                                 Главная
-
                             </p>
                         </a>
                     </li>
@@ -86,7 +76,6 @@
                             </p>
                         </a>
                         <ul class="nav nav-treeview">
-
 
                             <li class="nav-item">
                                 <a href="{{ route('product.index') }}" class="nav-link">
@@ -112,14 +101,12 @@
                                     <p>Добавить категорию</p>
                                 </a>
                             </li>
-
                             <li class="nav-item">
                                 <a href="{{ route('specification')}}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Спецификации</p>
                                 </a>
                             </li>
-
                             <li class="nav-item">
                                 <a href="{{ route('description')}}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
@@ -127,11 +114,8 @@
                                 </a>
                             </li>
 
-
-
                         </ul>
                     </li>
-
                 </ul>
             </nav>
             <!-- /.sidebar-menu -->

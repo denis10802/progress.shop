@@ -4,43 +4,42 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Routing\Redirector;
+use Illuminate\Routing\ResponseFactory;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    private ResponseFactory $responseFactory;
+    private Redirector $redirectTo;
+
+    public function __construct(
+        ResponseFactory $responseFactory,
+        Redirector $redirectTo
+    ) {
+        $this->responseFactory = $responseFactory;
+        $this->redirectTo = $redirectTo;
+    }
+
+    public function index(): Response
     {
         $categories = Category::all()->reverse();
 
-        return view('admin.category.index',[
+        return $this->responseFactory->view('admin.category.index',[
            'categories'=>$categories
         ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
-        return view('admin.category.create');
+        return $this->responseFactory->view('admin.category.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function store(Request $request): RedirectResponse
     {
         $request->validate([
             'title'=>'required|max:255'
@@ -51,59 +50,35 @@ class CategoryController extends Controller
 
         $category->save();
 
-        return redirect()->back()->with('success','Категория успешно добавлена');
+        return $this->redirectTo->back()->with('success','Категория успешно добавлена');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Category  $category
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Category $category)
+    public function edit(Category $category): Response
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Category  $category
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Category $category)
-    {
-        return view('admin.category.edit',[
-            'category'=>$category
+        return $this->responseFactory->view('admin.category.edit',[
+            'category'=>$category,
             ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Category  $category
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Category $category)
+    public function update(Request $request, Category $category): RedirectResponse
     {
         $category->title = $request->title;
         $category->slug = Str::of($request->title)->slug('-');
         $category->save();
 
-        return redirect()->back()->with('success','Категория успешно обновлена');
+        return $this->redirectTo->back()->with('success','Категория успешно обновлена');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Category  $category
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Category $category)
+    public function destroy(Category $category): RedirectResponse
     {
         Storage::disk('public')->delete($category->image);
         $category->delete();
-        return redirect()->back()->with('success','Категория удалена');
+
+        return $this->redirectTo->back()->with('success','Категория удалена');
+    }
+
+    public function show(Category $category)
+    {
+        //
     }
 }

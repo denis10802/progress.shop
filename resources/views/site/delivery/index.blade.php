@@ -14,7 +14,7 @@
 {{--            <div class="row no-gutters">--}}
 {{--                <div class="col-12">--}}
 {{--                    <div class="banner-image">--}}
-{{--                        <img src="/users/images/banner/dileviry.png" alt="">--}}
+{{--                        <img src="/site/images/banner/dileviry.png" alt="">--}}
 {{--                    </div>--}}
 {{--                </div>--}}
 {{--            </div>--}}

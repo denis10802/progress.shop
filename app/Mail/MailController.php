@@ -37,7 +37,7 @@ class MailController extends Mailable
      */
     public function build()
     {
-        return $this->view('users.mail')->with([
+        return $this->view('site.mail')->with([
             'name'=>$this->name,
             'email'=>$this->email,
             'telephone'=>$this->telephone

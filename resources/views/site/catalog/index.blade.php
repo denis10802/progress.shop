@@ -1,6 +1,6 @@
 @extends('layouts.shop_layout')
 
-@section('title', $cat->title)
+@section('title', 'Каталог')
 
 @section('breadcrumb-section')
 
@@ -12,11 +12,9 @@
                     <div class="page-breadcrumb-content">
                         <ul class="page-breadcrumb">
                             <li><a href="{{route('home')}}">Главная</a></li>
-                            <li><a href="{{route('catalog')}}">Каталог</a></li>
-                            <li>{{$cat->title}}</li>
-
+                            <li>Каталог</li>
                         </ul>
-                        <h1>{{$cat->title}}</h1>
+                        <h1>Каталог</h1>
                     </div>
                 </div>
             </div>
@@ -26,22 +24,15 @@
 
 @endsection
 
-
-
 @section('content')
 
-
-
-    <div class="col-lg-8 col-12 order-lg-2 order-1">
+    <div class="col-lg-8 col-12 order-lg-2 order-2">
         <div class="row">
-
             <div class="col-lg-12">
-
                 <div class="shop-product">
                     <div class="row">
-                        @foreach($cat->products as $product)
 
-
+                        @foreach($products as $product)
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12 card-border-bottom mt-5">
                                 <div class="single-product mb-30">
                                     <div class="product-image">
@@ -66,21 +57,20 @@
                                     </div>
                                 </div>
                             </div>
-
-                    @endforeach
-
-
-                    <!-- Start Single Product -->
-
-                        <!-- End Single Product -->
+                        @endforeach
 
                     </div>
 
+                    {{$products->links('vendor.pagination.bootstrap-4')}}
+
                 </div>
             </div>
-
         </div>
     </div>
 
-
 @endsection
+
+
+
+
+
