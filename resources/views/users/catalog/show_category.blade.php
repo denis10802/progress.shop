@@ -42,7 +42,7 @@
                         @foreach($cat->products as $product)
 
 
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-12  card-border-bottom">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12 card-border-bottom mt-5">
                                 <div class="single-product mb-30">
                                     <div class="product-image">
                                         <a href="{{route('showProduct', [$product->category->slug, $product->id])}}">
