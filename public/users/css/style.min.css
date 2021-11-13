@@ -7171,6 +7171,9 @@ body.template-color-4 {
   border-bottom: 2px solid #333333;
   margin: 0; }
   @media only screen and (max-width: 767px) {
+      .card-border-bottom{
+          border-bottom: 2px solid #e2e4ea;
+      }
     .cart-table .table {
       border-top: 2px solid #333333; } }
   .cart-table .table thead {

@@ -5,19 +5,24 @@ namespace App\Http\Controllers\Users;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Product;
+use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    public ResponseFactory $responseFactory;
 
-
+    public function __construct(ResponseFactory $responseFactory)
+    {
+        $this->responseFactory = $responseFactory;
+    }
 
     public function index()
     {
-        $categories = Category::all()->random(10);
-        $products = Product::all()->random(6);
+        $categories = Category::all()->random(10);//10
+        $products = Product::all()->random(6);//6
 
-        return view('users.home.index',[
+        return $this->responseFactory->view('users.home.index',[
             'categories'=>$categories,
             'products'=>$products
         ]);
@@ -25,19 +30,17 @@ class HomeController extends Controller
 
     public function  showContacts()
     {
-        return view('users.contact.index');
+        return $this->responseFactory->view('users.contact.index');
     }
 
     public function  showAbout()
     {
-        return view('users.about.index');
+        return $this->responseFactory->view('users.about.index');
     }
 
     public function showDelivery()
     {
-        return view('users.delivery.index');
+        return $this->responseFactory->view('users.delivery.index');
 
     }
-
-
 }

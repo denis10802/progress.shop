@@ -18,8 +18,6 @@
                             <li><a href="{{route('catalog')}}">Каталог</a></li>
                             <li><a href="{{route('showCategory',$product->category->slug)}}">{{$product->category->title}}</a></li>
                             <li>{{$product->title}}</li>
-
-
                         </ul>
                         <h1>{{$product->category->title}}</h1>
                     </div>
@@ -51,20 +49,16 @@
                                     <span class="new">{{$product->retail}} <i class="fas fa-ruble-sign"></i></span>
                                     <i style="font-size: 14px">Оптом</i>
                                     <span class="old">{{$product->wholesale}} <i class="fas fa-ruble-sign"></i></span>
-
                                 </h4>
-
                                 <div class="desc">
                                     <p>{{$product->descr}}</p>
                                 </div>
-
                                 <div class="actions">
-                                    <a href="#" name="#popup_1" class="add-to-cart popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
+                                    <a href="#" name="#popup_1" class="add-to-cart popup-link">ОФОРМИТЬ ЗАКАЗ</a>
                                 </div>
                                 <div class="actions-2">
                                     <a href="#" name="#popup_1" class="info-cart  popup-link">Получить консультацию</a>
                                 </div>
-
                             </div>
                         </div>
                         <div class="col-lg-4 col-12">
@@ -116,14 +110,10 @@
                                         </thead>
                                         @foreach($product->specifications as $specification )
                                         <tbody>
-
-
                                         <tr>
                                             <td class="pro-title">{{$specification->name_param}}</td>
                                             <td class="pro-price"><span>{{$specification->param}}</span></td>
                                         </tr>
-
-
                                         </tbody>
                                         @endforeach
                                     </table>
@@ -136,8 +126,6 @@
                         <div id="buy_with_this_product" class="tab-pane">
                             <div class="col-12 ">
                                 <div class="row">
-
-
                                     <div class="product-slider-3 section">
                                     @foreach($products as $product)
 
@@ -170,21 +158,12 @@
                                             </div>
                                             <!-- End Single Product -->
                                         @endforeach
-
-
-
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
-
-
             </div>
         </div>
     </div>

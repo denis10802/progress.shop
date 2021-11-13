@@ -44,15 +44,11 @@
 <body class="template-color-1" >
 
 <div id="main-wrapper" >
-
-
-
     <!--Header section start-->
     <header class="@section('header-class')header-absolute @show sb-border header-sticky d-none d-lg-block ">
         <div class="main-header">
             <div class="container-fluid pl-50 pl-lg-15 pl-md-15 pr-0">
                 <div class="row align-items-center no-gutters">
-
                     <!--Logo start-->
                     <div class="col-xl-2 col-lg-2 col-12">
                         <div class="logo mb-3">
@@ -67,11 +63,9 @@
                             <ul>
                                 <li><a href="{{route('home')}}">ГЛАВНАЯ</a></li>
                                 <li><a href="{{route('catalog')}}">КАТАЛОГ</a></li>
-                                <li><a href="{{route('showDelivery')}}">ДОСТАВКА И ОПЛАТА</a></li>
+                                <li><a href="{{route('showDelivery')}}">РАЗГРУЗКА И ПОДЪЕМ</a></li>
                                 <li><a href="{{route('showAbout')}}">О КОМПАНИИ</a></li>
                                 <li><a href="{{route('showContacts')}}">КОНТАКТЫ</a></li>
-
-
                             </ul>
                         </nav>
                     </div>
@@ -107,19 +101,14 @@
                                         <span>zakaz@progressshop.ru</span>
                                     </a>
                                 </div>
-
                             </div>
-
                         </div>
-                    </div>
-                                                                <!-- Cart & Search Area End -->
+                    </div>                                                                <!-- Cart & Search Area End -->
                 </div>
-
             </div>
         </div>
-
     </header>
-                                                <!--Header section end-->
+    <!--Header section end-->
 
         <!--Header Mobile section start-->
         <header class="header-mobile bg_color--2 d-block d-lg-none">
@@ -147,12 +136,10 @@
                                             </a>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </header>
@@ -178,7 +165,7 @@
 
                         <li><a href="{{route('showAbout')}}"><span>О КОМПАНИИ</span></a></li>
 
-                        <li><a href="{{route('showDelivery')}}"><span>ДОСТАВКА И ОПЛАТА</span></a></li>
+                        <li><a href="{{route('showDelivery')}}"><span>РАЗГРУЗКА И ПОДЪЕМ</span></a></li>
 
                         <li><a href="{{route('showContacts')}}"><span>КОНТАКТЫ</span></a></li>
 
@@ -202,24 +189,17 @@
                     </ul>
                 </div>
             </div>
-
         </div>
         <!-- End Popup Menu -->
 
-
-
         @yield('content')
-
-
 
         <!--Footer section start-->
         <footer class="footer-section section">
-
             <!-- Footer Top Section Start -->
             <div class="footer-top-section section pt-115 pt-lg-95 pt-md-75 pt-sm-55 pt-xs-45 pb-90 pb-lg-70 pb-md-40 pb-sm-20 pb-xs-15">
                 <div class="container">
                     <div class="row">
-
                         <div class="col-xl-5 col-lg-3 col-md-6">
                             <!-- Footer Widget Start -->
                             <div class="footer-widget mb-30">
@@ -281,8 +261,6 @@
                             </div>
                             <!-- Footer Widget End -->
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -319,7 +297,7 @@
                     <a class="popup__close close-popup">X</a>
 
                     <div class="popup-form form-popup">
-                        <h2 class="popup-form__title">Узнайте точную стоимость <br>наших услуг по телефону!</h2>
+                        <h2 class="popup-form__title">Оставьте заявку для уточнения  <br>деталей заказа и доставки по Санкт Петербугу и Ленинградской области.</h2>
                         <span class="popup-form__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
                         <form action="{{route('sendForm')}}"  method="post">
                             @csrf
@@ -341,9 +319,7 @@
 
                             </ul>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>

@@ -65,7 +65,7 @@
                             <ul>
                                 <li><a href="{{route('home')}}">ГЛАВНАЯ</a></li>
                                 <li><a href="{{route('catalog')}}">КАТАЛОГ</a></li>
-                                <li><a href="{{route('showDelivery')}}">ДОСТАВКА И ОПЛАТА</a></li>
+                                <li><a href="{{route('showDelivery')}}">РАЗГРУЗКА И ПОДЪЕМ</a></li>
                                 <li><a href="{{route('showAbout')}}">О КОМПАНИИ</a></li>                                            <li><a href="{{route('showContacts')}}">КОНТАКТЫ</a></li>
 
                             </ul>
@@ -171,7 +171,7 @@
 
                     <li><a href="{{route('showAbout')}}"><span>О КОМПАНИИ</span></a></li>
 
-                    <li><a href="{{route('showDelivery')}}"><span>ДОСТАВКА И ОПЛАТА</span></a></li>
+                    <li><a href="{{route('showDelivery')}}"><span>РАЗГРУЗКА И ПОДЪЕМ</span></a></li>
 
                     <li><a href="{{route('showContacts')}}"><span>КОНТАКТЫ</span></a></li>
 
@@ -208,7 +208,7 @@
             <div class="row">
                 @yield('content')
 
-                <div class="col-lg-4 col-12 order-lg-1 order-2">
+                <div class="col-lg-4 col-12 order-lg-1 order-1 pb-4 mb-2 card-border-bottom">
                     <div class="sidebar-wrapper-shop mt-sm-40 mt-xs-30">
                         <div class="common-sidebar-widget sidebar-four">
                             <h2 class="sidebar-title">Категории</h2>
@@ -284,7 +284,7 @@
                                 <ul>
                                     <li><a href="{{route('showContacts')}}">Контакты</a></li>
                                     <li><a href="{{route('showAbout')}}">O компании</a></li>
-                                    <li><a href="{{route('showDelivery')}}">Доставка и оплата</a></li>
+                                    <li><a href="{{route('showDelivery')}}">РАЗГРУЗКА И ПОДЪЕМ</a></li>
                                     <li><a href="#">Политика конфиденциальности</a></li>
                                 </ul>
                             </div>
@@ -343,7 +343,7 @@
                 <a class="popup__close close-popup">X</a>
 
                 <div class="popup-form form-popup">
-                    <h2 class="popup-form__title">Узнайте точную стоимость <br>наших услуг по телефону!</h2>
+                    <h2 class="popup-form__title"> Оставьте заявку для уточнения  <br>деталей заказа и доставки по Санкт Петербугу и Ленинградской области.</h2>
                     <span class="popup-form__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
                     <form action="{{route('sendForm')}}"  method="post">
                         @csrf

@@ -42,7 +42,7 @@
                         @foreach($cat->products as $product)
 
 
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12  card-border-bottom">
                                 <div class="single-product mb-30">
                                     <div class="product-image">
                                         <a href="{{route('showProduct', [$product->category->slug, $product->id])}}">
@@ -59,6 +59,10 @@
                                             <span class="old">{{$product->wholesale}} <i class="fas fa-ruble-sign"></i></span>
 
                                         </h4>
+                                        <div class="all-link-button text-center mt-10">
+
+                                            <a href="{{route('showProduct', [$product->category->slug, $product->id])}}" class="ht-btn lg-btn">Подробнее</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -30,7 +30,7 @@
 @section('content')
 
 
-    <div class="col-lg-8 col-12 order-lg-2 order-1">
+    <div class="col-lg-8 col-12 order-lg-2 order-2">
         <div class="row">
 
             <div class="col-lg-12">
@@ -38,7 +38,7 @@
                 <div class="shop-product">
                     <div class="row">
                         @foreach($products as $product)
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12 card-border-bottom">
                                 <div class="single-product mb-30">
                                     <div class="product-image">
                                         <a href="{{route('showProduct', [$product->category->slug, $product->id])}}">
