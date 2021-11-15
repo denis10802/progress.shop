@@ -20,8 +20,8 @@ class HomeController extends Controller
 
     public function index(): Response
     {
-        $categories = Category::all()->random(3);//10
-        $products = Product::all()->random(2);//6
+        $categories = Category::all()->random(10);//10
+        $products = Product::all()->random(6);//6
 
         return $this->responseFactory->view('site.home.index',[
             'categories'=>$categories,

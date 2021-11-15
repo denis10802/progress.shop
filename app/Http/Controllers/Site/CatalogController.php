@@ -40,7 +40,7 @@ class CatalogController extends Controller
    public function showProduct($catSlug, $id): Response
    {
        $product = Product::where('id',$id)->first();
-       $products = Product::all()->random(1);//10
+       $products = Product::all()->random(10);//10
 
        return $this->responseFactory->view('site.catalog.show_product',[
            'product'=>$product,
