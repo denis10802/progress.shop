@@ -57,7 +57,7 @@
                                     <a href="#" name="#popup_1" class="add-to-cart popup-link">ОФОРМИТЬ ЗАКАЗ</a>
                                 </div>
                                 <div class="actions-2">
-                                    <a href="#" name="#popup_1" class="info-cart  popup-link">Получить консультацию</a>
+                                    <a href="#" name="#popup_2" class="info-cart  popup-link">Получить консультацию</a>
                                 </div>
                             </div>
                         </div>

@@ -291,7 +291,7 @@
         <!--Footer section end-->
 
         <!--modal-->
-        <div class="popup" id="popup_1" >
+    <div class="popup" id="popup_1" >
             <div class="popup__body">
                 <div class="popup__content">
                     <a class="popup__close close-popup">X</a>
@@ -305,7 +305,7 @@
                                    placeholder="Ваше имя" required>
                             <input type="tel" name="telephone" class="telephone popup-form__input form-popup__phone"
                                    placeholder="Ваш телефон" required>
-                            <button type="submit" class="button popup-form__button">Узнать стоимость </button>
+                            <button type="submit" class="button popup-form__button">Оформить заказ </button>
                             <span class="popup-form__descr" class="popup-form____descr">Или Вы можете перезвонить нам сами по
                             телефону:</span>
                             <a href="tel:+79112923414" class="popup-form__tel">+7 911 292-34-14</a>
@@ -323,6 +323,40 @@
                 </div>
             </div>
         </div>
+    <div class="popup" id="popup_2" >
+        <div class="popup__body">
+            <div class="popup__content">
+                <a class="popup__close close-popup">X</a>
+
+                <div class="popup-form form-popup">
+                    <h2 class="popup-form__title"> Оставьте заявку для уточнения  <br>деталей заказа и доставки по Санкт Петербугу и Ленинградской области.</h2>
+                    <span class="popup-form__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+                    <form action="{{route('sendForm')}}"  method="post">
+                        @csrf
+                        <input type="text" name="name" class="popup-form__input form-popup__name "
+                               placeholder="Ваше имя" required>
+                        <input type="tel" name="telephone" class="telephone popup-form__input form-popup__phone"
+                               placeholder="Ваш телефон" required>
+                        <button class="button popup-form__button">Получить консультацию</button>
+                        <span class="popup-form__descr" class="popup-form____descr">Или Вы можете перезвонить нам сами по
+						телефону:</span>
+                        <a href="tel:+79112923414" class="popup-form__tel">+7 911 292-34-14</a>
+                    </form>
+
+
+                    <div class="info ">
+                        <ul class="social-icon">
+                            <li><a class="facebook" href="https://teleg.run/progressshop"><i class="fab fa-telegram-plane"></i></a></li>
+                            <li><a class="twitter" target="_blank" href="https://wa.me/+79112923414"><i class="fab fa-whatsapp"></i></a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 
             @if (session('success'))
 

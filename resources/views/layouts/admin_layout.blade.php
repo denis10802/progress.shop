@@ -238,12 +238,12 @@
 
         }
     }
+    
     function delFileFromInput() {
         $(document).on('click', '.remove', function () {
             $(this).closest('.uploaded').remove();
         });
     }
-
     $(document).on('change', '.file input',function(){
         readURL(this);
     });

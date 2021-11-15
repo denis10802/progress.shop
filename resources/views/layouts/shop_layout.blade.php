@@ -372,6 +372,7 @@
         </div>
     </div>
 
+
     @if (session('success'))
 
         <div class="popup_thanks active_popup">
