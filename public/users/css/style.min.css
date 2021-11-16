@@ -730,10 +730,12 @@ button.ht-btn {
     background-color: transparent;
     border: 1px solid #1dae0e;
     color: #1dae0e; }
+    a.ht-btn-info,
     a.ht-btn.transparent-btn-two:hover,
     button.ht-btn.transparent-btn-two:hover {
       background-color: #1dae0e;
       color: #ffffff; }
+    a.ht-btn-info,
   a.ht-btn.lg-btn,
   button.ht-btn.lg-btn {
     padding: 10px 35px 10px;
@@ -744,6 +746,7 @@ button.ht-btn {
     line-height: 24px;
     font-weight: 600;
     border-radius: 5px; }
+    a.ht-btn-info.lg-btn:hover,
     a.ht-btn.lg-btn:hover,
     button.ht-btn.lg-btn:hover {
       background-color: #000;
@@ -1172,6 +1175,8 @@ body.template-color-1 {
   body.template-color-1 a.ht-btn,
   body.template-color-1 button.ht-btn {
     background-color: #1dae0e; }
+    body.template-color-1 a.ht-btn-info {
+    background-color: #138496;}
     body.template-color-1 a.ht-btn.normal-btn,
     body.template-color-1 button.ht-btn.normal-btn {
       background-color: #1dae0e;
